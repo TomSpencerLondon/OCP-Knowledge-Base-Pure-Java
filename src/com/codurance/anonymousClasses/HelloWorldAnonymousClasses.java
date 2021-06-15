@@ -21,6 +21,14 @@ public class HelloWorldAnonymousClasses {
 
     EnglishGreeting englishGreeting = new EnglishGreeting();
 
+    // This is an anonymous class because
+    // it does not have a name but gives you the same
+    // methods. A better name might be Dynamic Class
+    // It implements all methods on the fly for the interface
+    // while creating an instance.
+    // An interface is an abstract class without any
+    // methods with a body except default and
+    // static methods
     HelloWorld frenchGreeting = new HelloWorld() {
       String name = "tout le monde";
       public void greet() {
