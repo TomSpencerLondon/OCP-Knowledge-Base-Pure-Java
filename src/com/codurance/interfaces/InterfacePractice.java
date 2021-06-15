@@ -19,5 +19,14 @@ class B extends Hello implements A {
 interface C {
   public abstract void abc();
   default void def(){};
+}
 
+class D implements C {
+  @Override
+  public void abc() {
+  }
+
+  void xyz() {
+    def();
+  }
 }
