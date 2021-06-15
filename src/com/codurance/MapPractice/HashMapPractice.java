@@ -5,10 +5,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class MapPractice {
+public class HashMapPractice {
   private final Map<Object, Object> map;
 
-  public MapPractice() {
+  public HashMapPractice() {
     map = new HashMap<>();
   }
 
@@ -21,7 +21,10 @@ public class MapPractice {
 
     System.out.println(entries);
 
-//    hashMap.forEach((e) -> e);
+    hashMap.forEach((k, v) -> {
+      System.out.print(k + " | ");
+      System.out.println(v);
+    });
 
     hashMap.containsValue("Hello");
     hashMap.remove("British-Greeting");
