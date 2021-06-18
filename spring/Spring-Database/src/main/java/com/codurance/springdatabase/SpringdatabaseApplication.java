@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.Entity;
@@ -23,6 +24,24 @@ public class SpringdatabaseApplication {
 
 }
 
+@Component
+class DataLoader {
+  private final CoffeeRepository coffeeRepository;
+
+  public DataLoader(CoffeeRepository coffeeRepository){
+    this.coffeeRepository = coffeeRepository;
+  }
+
+  @PostMapping
+  private void loadData(){
+    coffeeRepository.saveAll(List.of(
+        new Coffee("Café Cereza"),
+        new Coffee("Café Ganador"),
+        new Coffee("Café Lareño"),
+        new Coffee("Café Très Pontas")
+    ));
+  }
+}
 
 @RestController
 @RequestMapping("/coffees")
