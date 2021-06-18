@@ -1,0 +1,52 @@
+.c-artist-hero {
+  $self: &;
+  display: grid;
+  grid-template-columns: 70% auto;
+  
+  @media only screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+
+  #{$self}__inner {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  #{$self}__title {
+    color: #D4370B;
+    font-size: 48px;
+  }
+
+  #{$self}__image-container {
+    height: 100%;
+    overflow: hidden;
+
+    @media only screen and (max-width: 800px) {
+      grid-row: 1;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+    }
+  }
+
+  #{$self}__tags {
+    display: flex;
+    flex-wrap: wrap;
+    #{$self}__tag {
+      margin: 10px;
+      padding: 10px;
+      background-color: #D4370B;
+      border-radius: 5px;
+      color: #f5f5f5;
+    }
+  }
+}

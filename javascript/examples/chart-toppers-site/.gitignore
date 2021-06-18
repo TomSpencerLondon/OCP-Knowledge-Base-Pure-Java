@@ -1,0 +1,12 @@
+node_modules
+.next
+.DS_Store
+.vscode
+reports
+coverage
+
+.env
+*.log
+.serverless
+.serverless_nextjs
+tests/e2e/cypress/screenshots
