@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.codurance.imageanalyser.polly'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+def aws_sdk_version = '1.11.465'
+
+dependencies {
+    compile(
+            "com.amazonaws:aws-java-sdk-polly:${aws_sdk_version}"
+    )
+}
+
+task buildZip(type: Zip) {
+    from compileJava
+}
+
+sourceCompatibility = '11'
+targetCompatibility = '11'

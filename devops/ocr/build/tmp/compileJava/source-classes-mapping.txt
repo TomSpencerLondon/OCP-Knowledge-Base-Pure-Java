@@ -1,0 +1,14 @@
+cloud/developing/ocr/model/OcrInput.java
+ cloud.developing.ocr.model.OcrInput
+cloud/developing/ocr/model/AnalysisStrategy.java
+ cloud.developing.ocr.model.AnalysisStrategy
+cloud/developing/ocr/model/RecognitionCode.java
+ cloud.developing.ocr.model.RecognitionCode
+cloud/developing/ocr/model/OcrOutput.java
+ cloud.developing.ocr.model.OcrOutput
+cloud/developing/ocr/runtime/lambda/LambdaRunner.java
+ cloud.developing.ocr.runtime.lambda.LambdaRunner
+cloud/developing/ocr/Ocr.java
+ cloud.developing.ocr.Ocr
+cloud/developing/ocr/runtime/local/LocalRunner.java
+ cloud.developing.ocr.runtime.local.LocalRunner
