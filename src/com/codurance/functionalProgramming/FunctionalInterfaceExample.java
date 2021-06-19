@@ -1,9 +1,7 @@
 package com.codurance.functionalProgramming;
 
-import java.util.function.BiFunction;
-import java.util.function.BinaryOperator;
-import java.util.function.Function;
-import java.util.function.UnaryOperator;
+import java.util.List;
+import java.util.function.*;
 
 public class FunctionalInterfaceExample {
   @FunctionalInterface
@@ -56,5 +54,14 @@ public class FunctionalInterfaceExample {
     System.out.println(b5.apply("baby ", "chick"));
     System.out.println(b6.apply("baby ", "chick"));
 
+    Predicate<List> ex1 = x -> "".equals(x.get(0));
+    Consumer<Long> ex2 = (Long l) -> System.out.println(l);
+    BiPredicate<String, String> ex3 = (s1, s2) -> false;
+
+    Function<List<String>, String> ex4 = x -> x.get(0);
+
+    UnaryOperator<Long> ex5 = (Long l) -> Double.valueOf(3.14).longValue();
+
+    Predicate<String> ex7 = String::isEmpty;
   }
 }
