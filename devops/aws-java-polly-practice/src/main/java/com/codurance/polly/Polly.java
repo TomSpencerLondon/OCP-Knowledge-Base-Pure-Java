@@ -30,7 +30,7 @@ public class Polly {
   }
 
   public static void main(String[] args) {
-    var speak = new Polly().speak("Thank you to Fleming for a fun week's working with ECW!");
+    var speak = new Polly().speak("Really enjoying working with AWS Community Builders!");
     System.out.println(speak);
   }
 }
