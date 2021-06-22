@@ -5,10 +5,16 @@ public interface FunctionalInterface {
   public abstract void hello();
 
   public static void goodbye() {
-    throw new UnsupportedOperationException("Implement me!");
+    System.out.println("goodbye!");
   }
 
   default void go() {
-    throw new UnsupportedOperationException("Implement me!");
+    System.out.println("Let's go!");
+  }
+}
+
+class Greeting {
+  public static void main(String[] args) {
+    FunctionalInterface.goodbye();
   }
 }

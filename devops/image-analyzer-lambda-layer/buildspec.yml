@@ -1,0 +1,10 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - gradle buildZip
+      - aws cloudformation package --template-file template.yaml --s3-bucket lambda-jars-eu-west-1 --output-template-file outputTemplate.yaml --s3-prefix sam/layers
+artifacts:
+  type: zip
+  files:
+    - outpuTemplate.yaml

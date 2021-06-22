@@ -1,4 +1,4 @@
-package com.codurance.MapPractice;
+package com.codurance.mapPractice;
 
 import java.util.*;
 

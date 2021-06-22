@@ -16,6 +16,7 @@ class B extends Hello implements A {
   }
 }
 
+@FunctionalInterface
 interface C {
   public abstract void abc();
   default void def(){};

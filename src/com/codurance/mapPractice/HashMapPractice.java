@@ -1,17 +1,19 @@
-package com.codurance.MapPractice;
+package com.codurance.mapPractice;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 
-// One thread add to the map
-// guaranteed that we can safely get
-// an object from the map
-public class ConcurrentHashMapPractice {
+public class HashMapPractice {
+  private final Map<Object, Object> map;
+
+  public HashMapPractice() {
+    map = new HashMap<>();
+  }
+
   public static void main(String[] args) {
-    Map<String, String> hashMap = new ConcurrentHashMap<>();
+    Map<String, String> hashMap = new HashMap<>();
 
     hashMap.put("British-Greeting", "Hello");
     boolean b = hashMap.containsKey("British-Greeting");

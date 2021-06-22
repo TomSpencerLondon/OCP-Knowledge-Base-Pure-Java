@@ -9,14 +9,16 @@ Resources:
       AutoPublishAlias: prod
       Handler: cloud.developing.imageanalyzer.notifier.Notifier::send
       Runtime: java11
-      CodeUri: ./build/distributions/aws-notifier-practice-1.0-SNAPSHOT.zip
+      CodeUri: s3://toms-lambda-eu-west-1/sam/lambdas/087ad42c07ec63cd9da26f38da3f68c9
       MemorySize: 512
       Timeout: 30
-      Role: !Sub arn:aws:iam::${AWS::AccountId}:role/lambda_exec_role
+      Role:
+        Fn::Sub: arn:aws:iam::${AWS::AccountId}:role/lambda_exec_role
       Layers:
-        - !Sub arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:layer:image-analyzer-lambda-layer:1
+      - Fn::Sub: arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:layer:image-analyzer-lambda-layer:1
       Environment:
         Variables:
-          TOPIC_ARN: !Sub arn:aws:sns:${AWS::Region}:${AWS::AccountId}:image-analyzer-topic
+          TOPIC_ARN:
+            Fn::Sub: arn:aws:sns:${AWS::Region}:${AWS::AccountId}:image-analyzer-topic
           RECIPIENTS: notify@developing.cloud
           FROM: ia@developing.cloud

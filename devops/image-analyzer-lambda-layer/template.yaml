@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: Lambda layer for Image Analyzer app
+Resources:
+  imageAnalyzerLambdaLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: image-analyzer-lambda-layer
+      Description: 
+      ContentUri: ./build/distributions/image-analyzer-lambda-layer.zip
+      CompatibleRuntimes:
+        - java11
+      RetentionPolicy: Retain
