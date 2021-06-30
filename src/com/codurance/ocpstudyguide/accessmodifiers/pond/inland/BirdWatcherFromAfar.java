@@ -11,6 +11,6 @@ public class BirdWatcherFromAfar {
     // in the same package
     // This will not compile as it is in a different package
 //    bird.floatInWater();
-//    System.out.println(bird.text());
+//    System.out.println(bird.text);
   }
 }

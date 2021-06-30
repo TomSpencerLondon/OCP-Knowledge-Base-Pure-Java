@@ -1,4 +1,4 @@
-package com.codurance.ocpstudyguide.accessmodifiers.swan;
+package com.codurance.ocpstudyguide.accessmodifiers.pond.swan;
 
 import com.codurance.ocpstudyguide.accessmodifiers.duck.MotherDuck;
 
