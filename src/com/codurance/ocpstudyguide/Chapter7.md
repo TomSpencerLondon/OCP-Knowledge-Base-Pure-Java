@@ -291,6 +291,11 @@ E. 4
 F. 5
 
 Answer: D
+❌ Incorrect answer - E
+line 4 (no initialization)
+line 15 (can't change final)
+line 11 (final name is set twice)
+line 12 (final rightRope set twice)
 
 14. Which of the following can replace line 2 to make this code compile? (Choose all that apply.)
 
@@ -310,6 +315,10 @@ E. static import java.util.Collections.*;
 F. static import java.util.Collections.sort(ArrayList<String>);
 
 Answer: B
+✅ Correct - yay! - There are two ways:
+1. import static java.util.Collections.*;
+2. import static java.util.Collections.sort;
+
 
 15. What is the result of the following statements?
 
@@ -344,6 +353,11 @@ F. byte-Object-Object-
 
 Answer: D
 
+❌ Incorrect answer - E.
+short promoted to int
+boolean - promoted to Object (no Boolean autobox available)
+double - autoboxed to Double - Therefore Object is called (parent of Double)
+
 16. What is the result of the following program?
 
 1: public class Squares {
@@ -364,7 +378,10 @@ C. 81
 D. Compiler error on line 9
 E. Compiler error on a different line
 
-Answer: 81
+Answer: C - 81
+❌ Incorrect answer - D.
+Java is pass by value - value variable is not reassigned therefore it stays the same
+
 
 17. Which of the following are output by the following code? (Choose all that apply.)
 
@@ -391,6 +408,12 @@ E. s3 = a;
 F. The code does not compile.
 
 Answer: B, C, E
+❌ Incorrect answer - B, D, E
+Java is pass by value -
+B is correct s1 = s1
+D is correct - s2 = s2b - b.append does affect the caller. 
+E is correct as a is returned from work(s1, s2) - this is pass by value example
+
 
 18. Which of the following will compile when independently inserted in the following code?
 (Choose all that apply.)
