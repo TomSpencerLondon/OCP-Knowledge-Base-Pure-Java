@@ -408,6 +408,7 @@ E. s3 = a;
 F. The code does not compile.
 
 Answer: B, C, E
+
 ❌ Incorrect answer - B, D, E
 Java is pass by value -
 B is correct s1 = s1
@@ -437,6 +438,12 @@ E. Insert at line 9: value2 = "cyan";
 F. Insert at line 9: value3 = "turquoise";
 
 Answer: C, E
+
+❌ Incorrect answer - B, C, E
+1. value2 = "purple" - B - compiles because value2 is not final - also we are able to access value2
+on an instance
+2. value3 = "orange" - C - because we can add instance variable value in instance initializer
+3. value3 = "turquoise" - E - we can reassign value2 in the static constructor because value2 is not final
 
 19. Which of the following are true about the following code? (Choose all that apply.)
 
@@ -470,6 +477,9 @@ E. The code prints 3-4- if you remove the method static void execute(int num).
 F. The code prints 4-4- if you remove the method static void execute(int num).
 
 Answer: A, E
+✅ Correct - yay! 
+A - because int is matched to int
+E - because long is autoboxed to an Object as parent of Long class. 
 
 20. Which pairs of methods are valid overloaded pairs? (Choose all that apply.)
 A.
@@ -498,6 +508,11 @@ and
 public void woof(Character c) {}
 
 Answer: B
+❌ Incorrect answer - 
+A - Set and List both implement the Collections class
+C - char can be autoboxed to String
+F - Character c and char... chars can be overloaded because varargs can be both array and single
+parameter.
 
 21. Which can fill in the blank to create a properly encapsulated class? (Choose all that apply.)
 
@@ -521,7 +536,13 @@ F. None of the above for a reason other than the multiply() method
 
 Answer: A, C
 
-
+❌ Incorrect - A, B, C
+A is correct because numRabbits can be private, updated through the
+public 
+B is correct because protected means the function can be used by children
+classes in other packages
+C is correct because getNumberOfRabbits is then available to child
+classes in other classes
 
 
 
