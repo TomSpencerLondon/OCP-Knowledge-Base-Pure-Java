@@ -509,8 +509,10 @@ public void woof(Character c) {}
 
 Answer: B
 ❌ Incorrect answer - 
-A - Set and List 
-
+A - Set and List both implement the Collections class
+C - char can be autoboxed to String
+F - Character c and char... chars can be overloaded because varargs can be both array and single
+parameter.
 
 21. Which can fill in the blank to create a properly encapsulated class? (Choose all that apply.)
 
@@ -534,7 +536,13 @@ F. None of the above for a reason other than the multiply() method
 
 Answer: A, C
 
-
+❌ Incorrect - A, B, C
+A is correct because numRabbits can be private, updated through the
+public 
+B is correct because protected means the function can be used by children
+classes in other packages
+C is correct because getNumberOfRabbits is then available to child
+classes in other classes
 
 
 
