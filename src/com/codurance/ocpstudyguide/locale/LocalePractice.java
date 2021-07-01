@@ -10,5 +10,7 @@ public class LocalePractice {
     final Locale locale = new Locale("fr", "CA");
 
     System.out.println(locale.toString());
+    System.out.println(locale.getCountry());
+    System.out.println(locale.getDisplayCountry());
   }
 }
