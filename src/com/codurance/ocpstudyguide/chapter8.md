@@ -1,0 +1,195 @@
+1. Which code can be inserted to have the code print 2?
+
+public class BirdSeed {
+    private int numberBags;
+    boolean call;
+    
+    public BirdSeed() {
+        // LINE 1
+        call = false;
+        // LINE 2
+    }
+    
+    public BirdSeed(int numberBags) {
+        this.numberBags = numberBags;
+    }
+    
+    public static void main(String[] args) {
+        BirdSeed seed = new BirdSeed();
+        System.out.println(seed.numberBags);
+    }
+}
+
+A. Replace Line 1 with BirdSeed(2);
+B. Replace line 2 with BirdSeed(2);
+C. Replace line 1 with new BirdSeed(2);
+D. Replace line 2 with new BirdSeed(2);
+E. replace line 1 with this(2);
+F. Replace line 2 with this(2);
+G. The code prints 2 without any changes.
+
+Answer: E - replace line 1 with this(2);
+
+2. Which of the following statements about methods are true? (Choose all that apply.)
+A. Overloaded methods must have the same signature.
+B. Overridden methods must have the same signature.
+C. Hidden methods must have the same signature.
+D. Overloaded methods must have the same return type.
+E. Overridden methods must have the same return type.
+F. Hidden methods must have the same return type.
+
+Answer: B, C, D, E, F
+
+3. What is the output of the following program?
+1: class Mammal {
+2:      private void sneeze() {}
+3:      public Mammal (int age) {
+4:          System.out.print("Mammal");
+5:      } }
+6: public class Platypus extends Mammal {
+7:      int sneeze() { return 1; }
+8:      public Platypus() {
+9:          System.out.print("Platypus");
+10:     }
+11:     public static void main(String[] args) {
+12:         new Mammal(5);
+13:     } }
+
+A. Platypus
+B. Mammal
+C. PlatypusMammal
+D. MammalPlatypus
+E. The code will compile if line 7 is changed.
+F. The code will compile if line 9 is changed.
+
+Answer: B
+
+4. Which of the following complete the constructor so that this code prints out 50? (Choose all that apply.)
+
+class Speedster {
+    int numSpots;
+}
+
+public class Cheetah extends Speedster {
+    int numSpots;
+    
+    public Cheetah(int numSpots) {
+        // INSERT CODE HERE
+    }
+    
+    public static void main(String[] args) {
+        Speedster s = new Cheetah(50);
+        System.out.print(s.numSpots);
+    }
+}
+
+A. numSpots = numSpots;
+B. numSpots = this.numSpots;
+C. this.numSpots = numSpots;
+D. numSpots = super.numSpots;
+E. super.numSpots = numSpots;
+F. The code does not compile, regardless of the code inserted into the constructor.
+G. None of the above
+
+Answer: G
+
+5. What is the output of the following code?
+
+1: class Arthropod {
+2:      protected void printName(long input) {
+3:          System.out.print("Arthropod")
+4:      }
+5:      void printName (int input) {
+6:          System.out.print("Spooky");
+7:      } }
+8: public class Spider extends Arthropod {
+9:      protected void printName (int input) {
+10:         System.out.print("Spider");
+11:     }
+12:     public static void main(String[] args) {
+13:         Arthropod a = new Spider();
+14:         a.printName((short) 4);
+15:         a.printName(4);
+16:         a.printName(5L);
+17:     } }
+
+A. SpiderSpiderArthropod
+B. SpiderSpiderSpider
+C. SpiderSpookyArthropod
+D. SpookySpiderArthropod
+E. The code will not compile because of line 5.
+F. the code will not compile because of line 9.
+G. None of the above
+
+Answer: D - SpookySpiderArthropod
+  
+6. Which of the following statements about overridden methods are true? (Choose all that apply.)
+
+A. An overridden method must contain method parameters that are the same or covariant with 
+the method parameters in the inherited method.
+B. An overridden method may declare a new exception, provided it is not checked.
+C. An overridden method must be more accessible than the method in the parent class.
+D. An overridden method may declare a broader checked exception than the method in the
+parent class.
+E. If an inherited method returns void, then the overridden version of the method must
+return void.
+F. None of the above.
+
+Answer: A, C, D, E
+
+7. Which of the following pairs, when inserted into the blanks, allow the code to compile?
+(Choose all that apply.)
+
+1: public class Howler {
+2:      public Howler (long shadow) {
+3:          _______________;
+4:      }
+5:      private Howler (int moon) {
+6:          super();
+7:      }
+8: }
+9: class Wolf extends Howler {
+10:     protected Wolf(String stars) {
+11:         super(2L);
+12:     }
+13:     public Wolf() {
+14:         ______________;
+15:     }
+16: }
+
+A. this(3) at line 3, this("") at line 14
+B. this() at line 3, super(1) at line 14
+C. this((short) 1) at line 3, this(null) at line 14
+D. super() at line 3, super() at line 14
+E. this(2L) at line 3, super((short) 2) at line 14
+F. this(5) at line 3, super(null) at line 14
+G. Remove lines 3 and 14.
+
+Answer: C, F
+
+8. What is the result of the following?
+
+1: public class PolarBear {
+2:      StringBuilder value = new StringBuilder("t");
+3:      { value.append("a"); }
+4:      { value.append("c"); }
+5:      private PolarBear() {
+6:          value.append("b");
+7:      }
+8:      public PolarBear(String s) {
+9:          this();
+10:         value.append(s);
+11:     }
+12:     public Polar
+
+
+
+
+
+
+
+
+
+
+
+
