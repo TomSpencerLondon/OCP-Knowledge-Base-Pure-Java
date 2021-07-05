@@ -180,13 +180,104 @@ Answer: C, F
 9:          this();
 10:         value.append(s);
 11:     }
-12:     public Polar
+12:     public PolarBear(CharSequence p) {
+13:         value.append(p);
+14:     }
+15:     public static void main(String[] args) {
+16:         Object bear = new PolarBear();
+17:         bear = new PolarBear("f");
+18:         System.out.println(((PolarBear)bear).value);
+19:     } }
 
+A. tacb
+B. tacf
+C. tacbf
+D. tcafb
+E. taftacb
+F. The code does not compile
+G. An exception is thrown.
 
+Answer: C
 
+9. Which of the following method signatures are valid overrides of the hairy() method in the
+Alpaca class? (Choose all that apply.)
 
+import java.util.*;
 
+public class Alpaca {
+    protected List<String> hairy(int p) { return null; }
+}
 
+A. List<String> hairy(int p) { return null; }
+B. public List<String> hairy(int p) { return null; }
+C. public List<CharSequence> hairy(int p) { return null; }
+D. private List<String> hairy(int p) { return null; }
+E. public Object hairy(int p) { return null; }
+F. public ArrayList<String> hairy(int p) { return null; }
+G. None of the above.
+
+Answer: B, C, F
+
+10. How many lines of the following program contain a compilation error?
+
+1: public class Rodent {
+2:      public Rodent(var x) {}
+3:      protected static Integer chew() throws Exception {
+4:          System.out.println("Rodent is chewing");
+5:          return 1;
+6:      }
+7: }
+8: class Beaver extends Rodent {
+9:      public Number chew() throws RuntimeException {
+10:         System.out.println("Beaver is chewing on wood");
+11:         return 2;
+12:     }
+13: } }
+
+A. None
+B. 1
+C. 2
+D. 3
+E. 4
+F. 5
+
+Answer: D - 3
+
+11. which of the following statements about polymorphism are true? (Choose all that apply.)
+A. An object may be cast to a subtype without an explicit cast.
+B. If the type of a method argument is an interface, then a reference variable that implements the
+interface may be passed to the method.
+C. A method that takes a parameter with type java.lang.Object can be passed any variable.
+D. All cast exceptions can be detected at compile-time.
+E. By defining a final instance method in the superclass, you guarantee that the specific
+method will be called in the parent class at runtime.
+F. Polymorphism applies only to classes, not interfaces.
+
+Answer: B, D, E
+
+12. Which of the following statements can be inserted in the blank so that the code will
+compile successfully? (Choose all that apply.)
+
+public class Snake {}
+public class Cobra extends Snake {}
+public class Snakehandler {
+    private Snake snake;
+    public void setSnake(Snake snake) { this.snake = snake; }
+    public static void main(String[] args) {
+        new SnakeHandler().setSnake(__________);
+    }    
+}
+
+A. new Cobra()
+B. new Snake()
+C. new Object()
+D. new String("Snake")
+E. new GardenSnake()
+F. null
+G. None of the above. The class do not compile regardless of the value
+inserted in the blank.
+
+Answer: G
 
 
 
