@@ -279,8 +279,189 @@ inserted in the blank.
 
 Answer: G
 
+13. Which of these classes will compile and will include a default constructor created by the compiler?
+(Choose all that apply.)
+A. public class Bird {}
+B. public class Bird {
+    public Bird() {}
+}
+C. public class Bird {
+    public bird(String name) {}
+}
+D. public class Bird {
+    public Bird() {}
+}
+E. public class Bird {
+    Bird(String name) {}
+}
+F. public class Bird {
+    private Bird(int age) {}
+}
+G. public class Bird {
+    public Bird bird() { return null; }
+}
 
+Answer: A, G
 
+14. Which of the following statements about inheritance are correct? (Choose all that apply.)
+A. A class can directly extend any number of classes.
+B. A class can implement any number of interfaces.
+C. All variables inherit java.lang.Object.
+D. If class A is extended by B, then B is a superclass of A.
+E. If class C implements interface D, then C is subtype of D.
+F. Multiple inheritance is the property of a class to have multiple direct superclasses.
 
+Answer: B, E, F
 
+15. What is the result of the following?
 
+1: class Arachnid {
+2:      static StringBuilder sb = new StringBuilder();
+3:      { sb.append("c"); }
+4:      static
+5:      { sb.append("u"); }
+6:      { sb.append("r"); }
+7: }
+8: public class Scorpion extends Arachnid {
+9:      static
+10:     { sb.append("q"); }
+11:     { sb.append("m"); }
+12:     public static void main(String[] args) {
+13:         System.out.print(Scorpion.sb + " ");
+14:         System.out.print(Scorpion.sb + " ");
+15:         new Arachnid();
+16:         new Scorpion();
+17:         System.out.print(Scorpion.sb);
+18:     } }
+
+A. qu qu qumrcrc
+B. u u ucrcrm
+C. uq uq uqmcrcr
+D. uq uq uqcrcrm
+E. qu qu qumcrcr
+F. qu qu qucrcrm
+G. The code does not compile
+
+Answer: D
+
+16. Which of the following methods are valid overrides of the friendly() method in the Llama class?
+(Choose all that apply.)
+
+import java.util.*;
+
+public class Llama {
+    void friendly(List<String> laugh, Iterable<Short> s) {}
+}
+
+A. void friendly(List<CharSequence> laugh, Iterable<Short> s) {}
+B. void friendly(List<String> laugh, Iterable<Short> s) {}
+C. void friendly(ArrayList<String> laugh, Iterable<Short> s) {} 
+D. void friendly(List<String> laugh, Iterable<Integer> s) {}
+E. void friendly(ArrayList<CharSequence> laugh, Object s) {}
+F. void friendly(ArrayList<String> laugh, Iterable... s) {}
+
+Answer: A, D
+
+17. Which of the following statements about inheritance and variables are true? (Choose all that apply.)
+
+A. Instance variables can be overridden in a subclass
+B. If an instance variable is declared with the same name as an inherited variable, then the
+type of the variable must be covariant
+C. If an instance variable is declared with the same name as an inherited variable, then the
+access modifier must be at least as accessible as the variable in the parent class.
+D. If a variable is declared with the same name as an inherited static variable then it
+must also be marked static.
+E. The variable in the child class may not throw a checked exception that is new or broader than
+the class of any exception thrown in the parent class variable.
+F. None of the above.
+
+Answer: A, B, C, D
+
+18. Which of the following are true? (Choose all that apply.)
+A. this() can be called from anywhere in a constructor.
+B. this() can be called from anywhere in an instance method.
+C. this.variableName can be called from any instance method in the class.
+D. this.variableName can be called from any static method in the class.
+E. You can call the default constructor written by the compiler using this()
+F. You can access a private constructor with the main() method in the same class.
+
+Answer: C, E
+
+19. Which statements about the following classes are correct? (Choose all that apply.)
+
+1: public class Mammal {
+2:      private void eat() {}
+3:      protected static void drink() {}
+4:      public Integer dance(String p) { return null; }
+5: }
+6: class Primate extends Mammal {
+7:      public void eat(String p) {}
+8: }
+9: class Monkey extends Primate {
+10:     public static void drink() throws RuntimeException() {}
+11:     public Number dance(CharSequence p) { return null; }
+12:     public int eat(String p) {}
+13: }
+
+A. The eat() method in Mammal is correctly overridden on line 7.
+B. The eat() method in Mammal is correctly overloaded on line 7.
+C. The drink() method in Mammal is correctly hidden in line 10.
+D. The dance() method in Mammal is correctly overridden on line 11.
+E. The dance() method in Mammal is correctly overloaded on line 11.
+F. The eat() method in Primate is correctly hidden on line 12.
+G. The eat() method in Primate is correctly overloaded on line 12.
+
+Answer: B, C, D
+ 
+20. What is the output of the following code?
+
+1: class Reptile {
+2:      { System.out.print("A"); }
+3:      public Reptile(int hatch) {}
+4:      void layEggs() {
+5:          System.out.print("Reptile");
+6:      } }
+7: public class Lizard extends Reptile {
+8:      static { System.out.print("B"); }
+9:      public Lizard(int hatch) {}
+10:     public final void layEggs() {
+11:         System.out.print("Lizard");
+12:     }
+13:     public static void main(String[] args) {
+14:         Reptile reptile = new Lizard(1);
+15:         reptile.layEggs();
+16:     } }
+
+A. AALizard
+B. BALizard
+C. BLizardA
+D. ALizard
+E. The code will not compile because of line 10.
+F. None of the above.
+
+Answer: B
+
+21. Which statement about the following program is correct?
+
+1: class Bird {
+2:      int feathers = 0;
+3:      Bird(int x) { this.feathers = x; }
+4:      Bird fly() {
+5:          return new Bird(1);
+6:      } }
+7: class Parrot extends Bird {
+8:      protected Parrot (int y) { super(y); }
+9:      protected Parrot fly() {
+10:         return new Parrot(2);
+11:     } }
+12: public class Macaw extends Parrot {
+13:     public Macaw(int z) { super(z); }
+14:     public Macaw fly() {
+15:         return new Macaw(3);
+16:     }
+17:     public static void main(String... sing) {
+18:         Bird p = new Macaw(4);
+19:         System.out.print(((Parrot) p.fly()).feathers);
+20:     } }
+
+A. One line contains a compiler error. 
