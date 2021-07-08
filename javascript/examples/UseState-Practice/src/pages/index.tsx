@@ -1,6 +1,7 @@
 import React from "react";
 import { NextPage } from "next";
+import Counter from "../components/Counter";
 
-const Homepage: NextPage = () => <div>Hello world</div>;
+const Homepage: NextPage = () => <Counter />;
 
 export default Homepage;

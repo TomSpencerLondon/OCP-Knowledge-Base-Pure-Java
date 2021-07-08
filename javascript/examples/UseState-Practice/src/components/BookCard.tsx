@@ -10,8 +10,9 @@ const BookCard: FC<Props> = ({ id }: Props) => {
   const [book, setBook] = useState<Book>();
 
   useEffect(() => {
-    getBook(id).then((b) => setBook(b));
-  });
+    // getBook(id).then((b) => setBook(b));
+    setBook({} as Book);
+  }, [id]);
 
   return <article>{book?.name}</article>;
 };
