@@ -29,7 +29,7 @@ F. Replace line 2 with this(2);
 G. The code prints 2 without any changes.
 
 Answer: E - replace line 1 with this(2);
-
+✅ ❌
 2. Which of the following statements about methods are true? (Choose all that apply.)
 A. Overloaded methods must have the same signature.
 B. Overridden methods must have the same signature.
@@ -465,3 +465,147 @@ Answer: B
 20:     } }
 
 A. One line contains a compiler error. 
+B. Two lines contain compiler errors.
+C. Three lines contain compiler errors.
+D. The code compiles but throws a ClassCastException at runtime.
+E. The program compiles and prints 3.
+F. The program compiles and prints 0.
+
+Answer: B
+
+22. What does the following program print?
+1: class Person {
+2:      static String name;
+3:      void setName(String q) { name = q; } }
+4: public class Child extends Person {
+5:      static String name;
+6:      void setName(String w) { name = w; }
+7:      public static void main(String[] p) {
+8:          final Child m = new Child();
+9:          final Person t = m;
+10:         m.name = "Elysia";
+11:         t.name = "Sophia";
+12:         m.setName("Webby");
+13:         t.setName("Olivia");
+14:         System.out.println(m.name + " " + t.name);
+15: } }
+
+A. Elysia Sophia
+B. Webby Olivia
+C. Olivia Olivia
+D. Olivia Sophia
+E. The code does not compile.
+F. None of the above
+
+Answer: B
+
+23. What is the output of the following program?
+1: class Canine {
+2:      public Canine(boolean t) { logger.append("a"); }
+3:      public Canine() { logger.append("q"); }
+4:
+5:      private StringBuilder logger = new StringBuilder();
+6:      protected void print(String v) { logger.append(v); }
+7:      protected String view() { return logger.toString(); }
+8: }
+9:
+10: class Fox extends Canine {
+11:     public Fox(long x) { print("q"); }
+12:     public Fox(String name) {
+13:         this(2);
+14:         print("z");
+15:     }
+16: }
+17:
+18: public Fennec extends Fox {
+19:     public Fennec(int e) {
+20:         super("tails");
+21:         print("j");
+22:     }
+23:     public Fennec(short f) {
+24:         super("eevee");
+25:         print("m");
+26:     }
+27:
+28:     public static void main(String... unused) {
+29:         System.out.println(new Fennec(1).view());
+30:     } }
+
+A. qpz
+B. qpzj
+C. jzpa
+D. apj
+E. apjm
+F. The code does not compile
+G. None of the above
+
+Answer: F
+
+24. Which statements about polymorphism and method inheritance are correct? (Choose all that apply.)
+A. It cannot be determined until runtime which overridden method will be executed in a parent class.
+B. It cannot be determined until runtime which hidden method will be executed in a parent class.
+C. Marking a method static prevents it from being overridden or hidden.
+D. Marking a method final prevents it from being overridden or hidden.
+E. The reference type of the variable determines which overridden method will be called at runtime.
+F. The reference type of the variable determines which hidden method will be called at runtime.
+
+Answer: A, D, E
+ 
+25. What is printed by the following program?
+1: class Antelope {
+2:      public Antelope(int p) {
+3:          System.out.print("4");
+4:      }
+5:      { System.out.print("2"); }
+6:      static { System.out.print("1"); }
+7: }
+8: public class Gazelle extends Antelope {
+9:      public Gazelle(int p) {
+10:         super(6);
+11:         System.out.print("3");
+12:     }
+13:     public static void main(String hopping[]) {
+14:         new Gazelle(0);
+15:     }
+16:     static { System.out.print("8"); }
+17:     { System.out.print("9"); }
+18: }
+
+A. 182640
+B. 182943
+C. 182493
+D. 421389
+E. The code does not compile
+F. The output cannot be determined until runtime.
+
+Answer: C
+
+26. How many lines of the following program contain a compilation error?
+1: class Primate {
+2:      protected int age = 2;
+3:      { age = 1; }
+4:      public Primate() {
+5:          this().age = 3;
+6:      }
+7: }
+8: public class Orangutan {
+9:      protected int age = 4;
+10:     { age = 5 }
+11:     public Orangutan() {
+12:         this().age = 6;
+13:     }
+14:     public static void main(String[] bananas) {
+15:         final Primate x = (Primate) new Orangutan();
+16:         System.out.println(x.age);
+17:     }
+18: }
+
+A. None, and the program prints 1 at runtime.
+B. None, and the program prints 3 at runtime.
+C. none but it causes a ClassCastException at runtime.
+D. 1
+E. 2
+F. 3
+G. 4
+
+Answer: F
