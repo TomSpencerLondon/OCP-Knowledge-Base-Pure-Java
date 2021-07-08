@@ -41,7 +41,10 @@ E. Overridden methods must have the same return type.
 F. Hidden methods must have the same return type.
 
 Answer: B, C, D, E, F
-✅ ❌
+
+❌ - Incorrect answer - B, C - overridden methods must have ssame signature and - not of the methods
+must have the same return type.
+
 3. What is the output of the following program?
 1: class Mammal {
 2:      private void sneeze() {}
@@ -65,6 +68,9 @@ E. The code will compile if line 7 is changed.
 F. The code will compile if line 9 is changed.
 
 Answer: B
+
+❌ - Incorrect answer - F - There is no default constructor - the constructor needs to
+call super(int)
 
 4. Which of the following complete the constructor so that this code prints out 50? (Choose all that apply.)
 
@@ -93,7 +99,8 @@ E. super.numSpots = numSpots;
 F. The code does not compile, regardless of the code inserted into the constructor.
 G. None of the above
 
-Answer: G
+Answer: G 
+❌ Incorrect answer - E - super.numSpots = numSpots
 
 5. What is the output of the following code?
 
@@ -124,6 +131,11 @@ F. the code will not compile because of line 9.
 G. None of the above
 
 Answer: D - SpookySpiderArthropod
+
+❌ - Incorrect answer - A - SpiderSpiderArthropod - printName is overridden in the Spider
+class and since there is no long param in a function in the Spider class the class uses the
+Arthropod to fulfill this request.
+
   
 6. Which of the following statements about overridden methods are true? (Choose all that apply.)
 
