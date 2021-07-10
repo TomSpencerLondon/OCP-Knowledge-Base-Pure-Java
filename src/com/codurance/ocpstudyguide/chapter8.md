@@ -150,6 +150,12 @@ return void.
 F. None of the above.
 
 Answer: A, C, D, E
+❌ - Incorrect answer - B, E.
+The signature must match exactly, making option A incorrect.
+There is no such thing as a covariant signature. An overridden method must not declare any
+new checked exceptions or a checked exception that is broader than the inherited method. For this reason
+option B is correct, and option D is incorrect. Option C is incorrect.
+Option E is correct - overridden methods must have covariant return types.
 
 7. Which of the following pairs, when inserted into the blanks, allow the code to compile?
 (Choose all that apply.)
@@ -180,6 +186,8 @@ F. this(5) at line 3, super(null) at line 14
 G. Remove lines 3 and 14.
 
 Answer: C, F
+❌ - Incorrect - Option A and C are correct.
+
 
 8. What is the result of the following?
 
@@ -212,6 +220,7 @@ F. The code does not compile
 G. An exception is thrown.
 
 Answer: C
+✅ Yay! I got it right.
 
 9. Which of the following method signatures are valid overrides of the hairy() method in the
 Alpaca class? (Choose all that apply.)
@@ -231,6 +240,9 @@ F. public ArrayList<String> hairy(int p) { return null; }
 G. None of the above.
 
 Answer: B, C, F
+
+❌ - Incorrect - B, F, A are the correct answers
+C is incorrect - String is a subtype of CharSequence but generic type parameters must match exactly.
 
 10. How many lines of the following program contain a compilation error?
 
@@ -257,6 +269,13 @@ F. 5
 
 Answer: D - 3
 
+✅ Yay! I got it right.
+First compilation error is on line 2, var cannot be used as a constructor argument.
+Second compilation error on line 8 Rodent has a constructor which means there is no default for Beaver
+Third compilation error is line 9 - return types not covariant (Number is supertype of Integer not subtype)
+Also inherited method is static but the overridden method is not.
+
+
 11. which of the following statements about polymorphism are true? (Choose all that apply.)
 A. An object may be cast to a subtype without an explicit cast.
 B. If the type of a method argument is an interface, then a reference variable that implements the
@@ -269,11 +288,22 @@ F. Polymorphism applies only to classes, not interfaces.
 
 Answer: B, D, E
 
+❌ - Incorrect - Correct answer was B, C and E
+First B is correct because if the type of a method argument is an interface then a reference variable that implements
+interface may be passed to the method.
+Second, C is correct because a method that takes a parameter with type java.lang.Object can be passed
+any variable
+Third E is correct because defining a final instance method on the superclass means that the
+specific method will be called in the parent class at runtime.
+
+D was incorrect because not all cast exceptions can be detected at compile time.
+
 12. Which of the following statements can be inserted in the blank so that the code will
 compile successfully? (Choose all that apply.)
 
 public class Snake {}
 public class Cobra extends Snake {}
+public class GardenSnake extends Cobra {}
 public class Snakehandler {
     private Snake snake;
     public void setSnake(Snake snake) { this.snake = snake; }
@@ -292,6 +322,12 @@ G. None of the above. The class do not compile regardless of the value
 inserted in the blank.
 
 Answer: G
+
+❌ - Incorrect - There are several possible insertions - We can insert:
+A - new Cobra() because Cobra is a subclass of Snake and can therefore be passed to setSnake
+B - new Snake() because this is the same as the parameter
+E - new GardenSnake() because it extends Cobra which as seen earlier is a subclass of Snake.
+F - we can insert null because null is possible to set instead of an instance of a class.
 
 13. Which of these classes will compile and will include a default constructor created by the compiler?
 (Choose all that apply.)
@@ -317,6 +353,10 @@ G. public class Bird {
 
 Answer: A, G
 
+✅ Yay! I got it right.
+A - because the constructor has not been defined and therefore is default.
+G - because the default constructor has been defined
+
 14. Which of the following statements about inheritance are correct? (Choose all that apply.)
 A. A class can directly extend any number of classes.
 B. A class can implement any number of interfaces.
@@ -326,6 +366,12 @@ E. If class C implements interface D, then C is subtype of D.
 F. Multiple inheritance is the property of a class to have multiple direct superclasses.
 
 Answer: B, E, F
+
+✅ Yay! I got it right.
+
+B - because a class can implement any number of interfaces
+E - is correct because a class that implements an interface is a subtype of the class.
+F - is correct because this describes multiple inheritance which is not permitted in Java.
 
 15. What is the result of the following?
 
@@ -358,6 +404,14 @@ G. The code does not compile
 
 Answer: D
 
+✅ Yay! I got it right.
+The static components are initialized first, starting with the Arachnid class which is the
+parent of the Scorpion class.
+There are two instance initializers in Arachnid which run in order
+The instance initializers in Arachnid run first
+Finally the instance initializer in Scorpion runs and appends m.
+
+
 16. Which of the following methods are valid overrides of the friendly() method in the Llama class?
 (Choose all that apply.)
 
@@ -376,6 +430,14 @@ F. void friendly(ArrayList<String> laugh, Iterable... s) {}
 
 Answer: A, D
 
+❌ - Incorrect
+Correct answer is B
+A and D do not compile because overriding methods must have matching parameters to the overridden
+method.
+B is only correct override because it has matching parameters.
+C, E and F do compile but are overloads not overrides because the generic class has changed in their
+parameters.
+
 17. Which of the following statements about inheritance and variables are true? (Choose all that apply.)
 
 A. Instance variables can be overridden in a subclass
@@ -391,6 +453,13 @@ F. None of the above.
 
 Answer: A, B, C, D
 
+❌ - Incorrect
+
+The correct answer was F. A - E are incorrect statements about inheritance and variables.
+A is incorrect because variables can only be hidden not overridden by inheritance.
+B, C and E are incorrect because they match rules for overriding methods not variables
+D is incorrect because this is a rule for hiding static methods.
+
 18. Which of the following are true? (Choose all that apply.)
 A. this() can be called from anywhere in a constructor.
 B. this() can be called from anywhere in an instance method.
@@ -400,6 +469,13 @@ E. You can call the default constructor written by the compiler using this()
 F. You can access a private constructor with the main() method in the same class.
 
 Answer: C, E
+
+❌ - Incorrect
+The correct answer was C and F.
+C - this.variableName can be called from any instance method in the class.
+F - You can acceess a private constructor with the main() method in the same class.
+this() can only be called in a constructor - if there is a constructor then there is no
+default constructor.
 
 19. Which statements about the following classes are correct? (Choose all that apply.)
 
@@ -426,6 +502,12 @@ F. The eat() method in Primate is correctly hidden on line 12.
 G. The eat() method in Primate is correctly overloaded on line 12.
 
 Answer: B, C, D
+
+❌ - Incorrect
+
+The correct answer was C and F.
+C - The drink method is correctly hidden in line 10.
+F - The eat() method in Primate is correctly hidden on line 12.
  
 20. What is the output of the following code?
 
@@ -454,6 +536,14 @@ E. The code will not compile because of line 10.
 F. None of the above.
 
 Answer: B
+
+❌ - Incorrect
+The correct answer was F.
+The Reptile class defines a construcotr but it is a no-argument constructor.
+Therefore, Lizard must explicitlly call super() passing in an int value.
+If we did have the super(int) in public Lizard(int hatch) {} then we would have
+BALizard at runtime - since the static initializer would run first, followed by the
+instance initializer and finally the method call using the overridden method.
 
 21. Which statement about the following program is correct?
 
@@ -487,6 +577,11 @@ F. The program compiles and prints 0.
 
 Answer: B
 
+❌ - Incorrect
+E - the program compiles and prints 3. This is because the fly method is overridden in the
+Macaw class and overriding replaces the method regardless of the reference type. This means
+that feathers is assigned a value of 3.
+
 22. What does the following program print?
 1: class Person {
 2:      static String name;
@@ -513,6 +608,14 @@ F. None of the above
 
 Answer: B
 
+❌ - Incorrect
+The correct answer was D - The code compiles.
+The child class overrides the setName() method and hides the static name variable defined in the
+Person class.
+Line 10 uses the Child reference type - updating Child.name to Elysia. Line 11 uses the Person type updating
+Person.name to Sophia. Lines 12 and 13 both call the overridden setName method in Child.
+Then 12 and 13 set the static name variable in Child to Webby and then Olivia.
+
 23. What is the output of the following program?
 1: class Canine {
 2:      public Canine(boolean t) { logger.append("a"); }
@@ -524,7 +627,7 @@ Answer: B
 8: }
 9:
 10: class Fox extends Canine {
-11:     public Fox(long x) { print("q"); }
+11:     public Fox(long x) { print("p"); }
 12:     public Fox(String name) {
 13:         this(2);
 14:         print("z");
@@ -555,6 +658,17 @@ G. None of the above
 
 Answer: F
 
+❌ - Incorrect
+
+The correct answer was B.
+The program compiles making F incorrect. 
+
+First Fennec is initialized and calls super("tails"). The Fox(String) constructor then calls
+this(2) which calls super() and calls the constructor in canine. Therefore q is appended to the
+StringBuilder. Then print("p") in the Fox(long) constructor appends p to the Stringbuilder.
+Next z is appended then Fennec appends j and view calls to string in the System.out.println().
+ 
+
 24. Which statements about polymorphism and method inheritance are correct? (Choose all that apply.)
 A. It cannot be determined until runtime which overridden method will be executed in a parent class.
 B. It cannot be determined until runtime which hidden method will be executed in a parent class.
@@ -564,6 +678,17 @@ E. The reference type of the variable determines which overridden method will be
 F. The reference type of the variable determines which hidden method will be called at runtime.
 
 Answer: A, D, E
+
+❌ - Incorrect
+
+The correct answer was A, D, F -
+Polymorphism is the property of an object to take on many forms. Part of polymorphism
+is that methods are replaced through overriding whenever they are called, regardless
+of whether they are in a parent or child class. Therefore A is correct and E incorrect.
+
+A - It cannot be determined until runtime which overrridden method will be executed in a parent class.
+D - Marking a method final prevents it from being overridden or hidden.
+F - The reference type of the variable determines which hidden method will be called at runtime.
  
 25. What is printed by the following program?
 1: class Antelope {
@@ -594,6 +719,12 @@ F. The output cannot be determined until runtime.
 
 Answer: C
 
+✅ Yay! I got it right.
+
+The program prints 1 (static in parent Antelope class) then 8 in the child Gazelle class.
+It then prints 2, then the 4 of the Antelope constructor then 9 of the Gazelle object initializer.
+Then finally the 3 at the end of the Gazelle constructor.
+
 26. How many lines of the following program contain a compilation error?
 1: class Primate {
 2:      protected int age = 2;
@@ -623,3 +754,7 @@ F. 3
 G. 4
 
 Answer: F
+
+✅ Yay! I got it right.
+The compilation errors are on line 5 (this().age), 12 (this().age), 15 (incorrect casting because Orangutan is
+not a subclass of Primate).
