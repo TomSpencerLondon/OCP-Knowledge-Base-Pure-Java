@@ -758,3 +758,5 @@ Answer: F
 ✅ Yay! I got it right.
 The compilation errors are on line 5 (this().age), 12 (this().age), 15 (incorrect casting because Orangutan is
 not a subclass of Primate).
+
+8/26 = 30% - I think the pass rate is 60%
