@@ -121,3 +121,139 @@ C. The code will not compile because of line 2.
 D. The code will not compile because of line 5.
 E. The code will not compile because of line 7.
 F. The code will not compile because of line 8.
+G. None of the above.
+
+Answer: B
+
+8. Which statements are true about the following code? (Choose all that apply.)
+interface Dog extends CanBark, HasVocalCords {
+    abstract int chew();
+}
+
+public interface CanBark extends HasVocalCords {
+    public void bark();
+}
+
+interface HasVocalCords {
+    public abstract void makeSound();
+}
+
+A. The CanBark declaration doesn't compile.
+B. A class that implements hasVocalCords must override the makeSound() method.
+C. A class that implements CanBark inherits both the makeSound and bark() methods.
+D. A class that implements Dog must be marked final.
+E. The Dog declaration does not compile because an interface cannot extend two interfaces.
+
+Answer: C
+
+9. Which access modifiers can be applied to member inner classes? (Choose all that apply.)
+A. static
+B. public
+C. default (package-private)
+D. final
+E. protected
+F. private
+
+Answer: A, B, C, E, F
+
+10. Which statements are true about the following code? (Choose all that apply.)
+
+5: public interface CanFly {
+6:      int fly()
+7:      String fly(int distance);
+8: }
+9: interface HasWings {
+10:     abstract String fly();
+11:     public abstract Object getWingSpan();
+12: }
+13: abstract class Falcon implements CanFly, HasWings {}
+
+A. It compiles without issue.
+B. The code will not compile because of line 5.
+C. The code will not compile because of line 6.
+D. The code will not compile because of line 7.
+E. The code will not compile because of line 9.
+F. The code will not compile because of line 10.
+G. The code will not compile because of line 13.
+
+Answer: C. 
+
+11. Which modifier pairs can be used together in a method declaration? (Choose all that apply.)
+A. static and final
+B. private and static
+C. static and abstract
+D. private and abstract
+E. abstract and final
+F. private and final
+
+Answer: A, C, F
+
+12. Which of the following statements about the FruitStand program are correct? (Choose all that apply.)
+
+1: interface Apple {}
+2: interface Orange {}
+3: class Gala implements Apple {}
+4: class Tangerine implements Orange {}
+5: final class Citrus extends Tangerine {}
+6: public class FruitStand {
+7:      public static void main(String... farm) {
+8:          Gala g = new Gala();
+9:          Tangerine t = new Tangerine();
+10:         Citrus c = new Citrus();
+11:         System.out.print(t instanceof Gala);
+12:         System.out.print(c instanceof Tangerine);
+13:         System.out.print(g instanceof Apple);
+14:         System.out.print(t instanceof Apple);
+15:         System.out.print(c instanceof Apple);
+16: } }
+
+A. Line 11 contains a compiler error
+B. Line 12 contains a compiler error
+C. Line 13 contains a compiler error
+D. Line 14 contains a compiler error
+E. Line 15 contains a compiler error
+F. None of the above
+
+Answer: A, D, 15
+
+13. What is the output of the following code?
+
+1: interface Jump {
+2:      static public int MAX = 3;
+3: }
+4: public abstract class Whale implments Jump {
+5:      public abstract void dive();
+6:      public static void main(String[] args) {
+7:          Whale whale = new Orca();
+8:          whale.dive(3);
+9:      }
+10: }
+11: class Orca extends Whale {
+12:     public void dive() {
+13:         System.out.println("Orca diving");
+14:     }
+15:     public void dive(int... depth) {
+16:         System.out.println("Orca diving deeper " + MAX);
+17: } }
+
+A. Orca diving
+B. Orca diving deeper 3
+C. The code will not compile because of line 2.
+D. The code will not compile because of line 4.
+E. The code will not compile because of line 11.
+F. The code will not compile because of line 16.
+G. None of the above.
+
+Answer: B
+
+14. Which statements are true for both abstract classes and interfaces? (Choose all that apply.)
+A. Both can be extended using the extends keyword.
+B. All methods within them are asssumed to be abstract.
+C. Both can contain public static final variables.
+D. The compiler will insert the implicit abstract modifier automatically on methods
+declared without a body, if they are not marked as such.
+E. Both interfaces and abstract classes can be declared with the abstract modifier.
+F. both inherit java.lang.Object.
+
+Answer: B, D, E, F
+
