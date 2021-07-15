@@ -10,7 +10,7 @@ public class Parser {
   static List<String> parse(String html){
     final String[] elements = html.split("<p>");
 
-    List<String> result = new ArrayList<String>();
+    List<String> result = new ArrayList<>();
 
     for (String element : elements){
       result.add(element.replace("</p>", ""));
