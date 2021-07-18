@@ -144,4 +144,114 @@ E. A finally block is required when there are no catch blocks in a try-with-reso
 F. A finally block is required in order to make sure all resources are closed in a try-with-resources statement.
 G. A finally block is executed before the resources declared in a try-with-resources statement are closed.
 
-Answer: D,  
+Answer: B, C, D
+
+5. Which exception will the following method throw?
+
+3: public static void main(String[] args) {
+4:      Object obj = Integer.valueOf(3);
+5:      String str = (String) obj;
+6:      obj = null;
+7:      System.out.println(obj.equals(null));
+8: }
+
+A. ArrayIndexOutOfBoundsException
+B. IllegalArgumentException
+C. ClassCastException
+D. NumberFormatException
+E. NullPointerException
+F. None of the above
+
+Answer: E
+
+6. Which does the following method print?
+
+11: public void tryAgain(String s) {
+12:     try(FileReader r = null, p = new FileReader("")){
+13:         System.out.print("X");
+14:         throw new IllegalArgumentException();
+15:     } catch (Exception s) {
+16:         System.out.print("A");
+17:     } finally {
+18:         System.out.print("0");
+19:     }
+20: }
+
+A. XAO 
+B. XOA
+C. One line of this method contains a compiler error.
+D. Two lines of this method contain compiler errors.
+E. Three lines of this method contain compiler errors.
+F. The code compiles, but a NullPointerException is thrown at runtime.
+G. None of the above.
+
+Answer: C
+
+7. What will happen if you add the following statement to a working main() method?
+System.out.print(4 / 0);
+
+A. It will not compile;
+B. It will not run;
+C. It will run and throw an ArithmeticException.
+D. It will run and throw an IllegalArgumentException.
+E. None of the above.
+
+Answer: C
+
+8. What is printed by the following program?
+
+1: public class DoSomething {
+2:      public void go() {
+3:          System.out.print("A");
+4:          try {
+5:              stop();
+6:          } catch (ArithmeticException e) {
+7:              System.out.print("B");
+8:          } finally {
+9:              System.out.print("C");
+10:         }
+11:         System.out.print("D");
+12:     }
+13:     public void stop() {
+14:         System.out.print("E");
+15:         Object x = null;
+16:         x.toString();
+17:         System.out.print("F");
+18:     }
+19:     public static void main(String n[]){
+20:         new DoSomething().go();
+21:     }
+22: }
+
+A. AE
+B. AEBCD
+C. AEC
+D. AECD
+E. AE followed by a stack trace.
+F. AEBCD followed by a stack trace.
+G. AEC followed by a stack trace.
+H. A stack trace with no other output.
+
+Answer: D
+
+9. What is the output of the following snippet, assuming a and b are both 0?
+
+3: try {
+4:      System.out.print( a / b);
+5: } catch (RuntimeException e) {
+6:      System.out.print(-1);
+7: } catch (ArithmeticException e) {
+8:      System.out.print(0);
+9: } finally {
+10:     System.out.print("done");
+11: }
+
+A. -1
+B. 0
+C. done-1
+D. done0
+E. The code does not compile
+F. An uncaughtException is thrown
+G. none of the above.
+
+Answer: D
