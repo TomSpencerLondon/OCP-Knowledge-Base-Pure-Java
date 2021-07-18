@@ -1,3 +1,7 @@
+## Learn SQL Database Programming
+## Query and Manipulate databases from popular relational database servers using SQL
+## Josephine Bush
+
 ### Introduction To Relational Database Management Systems
 
 Questions
@@ -45,15 +49,66 @@ particular spacing for the SQL to run correctly.
 ![Screenshot 2021-07-18 at 10 09 45](https://user-images.githubusercontent.com/27693622/126061883-74b4df12-8576-4728-9dba-889932858ce5.png)
 
 4. What are the reasons to normalize a database?
+We should normalize our databases in order to avoid redundant data, optimize database performance,
+and ensure data integrity.
+Without database normalization it is possible to have data redundancy and it can also
+be difficult to update and maintain the database without data loss.
 
 5. What are the levels of database normalization?
+There are three levels of database normalization:
+- First normal form (1NF)
+    - define data, columns, data types and put data into columns
+    - eliminate repeating grouops of data:
+        - no repeating columns (e.g. Year1, Year2) instead have year
+        - not multiple values in same field - eg 1985, 1987 - place year in a row
+        - No exact duplicate rows
+- Second normal form (2NF)
+    - Meet the requirements of 1NF
+    - Remove partial dependencies - narrow tables to single purpose
+- Third normal form (3NF)
+    - Meet the requirements of 2NF
+    - No attributes depend on other non-key attributes 
 
 6. What is data integrity?
+Data integrity refers to the consistency and accuracy of data. There are three
+types of data integrity: entity integrity, referential integrity and domain
+integrity. Entity integrity ensures rows in a table are identifiably unique.
+Referential integrity ensures that tables can be linked together. You achieve
+referential integrity by having a primary key on the parent table and a foreign
+key on the child table.
 
 7. What are the different ways you can enforce data integrity?
+For entity integrity we can use unique constraints, not null constraints and primary keys.
+Unique constraints ensure that values in a column or columns are different from each other.
+If we create a unique constraint on one column, it forces the table to have unique values in
+that specific column. If they are not unique, then the row will not be able to be inserted or
+updated. This avoids duplicate data. 
+Not null constraints ensure that all values in a column are not null.
+Primary keys are used to ensure that all values in a column are not null and unique.
+
+Referential integrity refers to the consistency and accuracy between tables that can
+be linked together. Primary key on the parent table and foreign keys on the child
+table ensure referential integrity. The foreign key can maintain three types of table
+relationships:
+- one to one - one table has one corresponding row on another table - eg employees and computers
+- one to many - one table has none, one or many corresponding rows on another table. Adults and children.
+- many to many - Many rows in one table correspond to many rows in another table. customers and products.
+
+Domain integrity refers to the defined rules for formatting, range, and value
+using check and default constraints. Check constraints can check that values in a column are in a range of
+values such as "Y" and "N" for instance. Default constraints ensure a default 
+value for a field such as "false".
 
 8. What types of RDMS exist?
+There are four main types of RDMS, Oracle, MySQL, SQL Server and PostgreSQL.
+Oracle - has a lot of functionality for database administrators.
+MySQL - free easy to implement - support is not free.
+SQL Server - offers replication and high availabity and partitioning
+PostgreSQL - high availability and partitioning - scalable and can handle
+terabytes of data.
 
 9. What is the main advantage of MySQL?
+It is free, open source and easy to implement.
 
 10. What is the main disadvantage of Oracle and SQL Server?
+They are expensive.
