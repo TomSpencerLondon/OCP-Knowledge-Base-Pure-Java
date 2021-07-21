@@ -255,3 +255,147 @@ F. An uncaughtException is thrown
 G. none of the above.
 
 Answer: D
+
+10. What is the output of the following program?
+
+1: public class Laptop {
+2:      public void start() {
+3:          try {
+4:              System.out.print("Starting up_");
+5:              throw new Exception();
+6:          } catch (Exception e) {
+7:              System.out.print("Problem_");
+8:              System.exit(0);
+9:          } finally {
+10:             System.out.print("Shutting down");
+11:         }
+12:     }
+13:     public static void main(String[] w) {
+14:         new Laptop().start();
+15:     } }
+
+A. Starting up_
+B. Starting up_Problem_
+C. Starting up_Problem_Shutting down
+D. Starting up_Shutting down
+E. The code does not compile.
+F. An uncaught exception is thrown.
+
+Answer: B
+
+11. What is the output of the following program?
+
+1: public class Dog {
+2:      public String name;
+3:      public void runAway() {
+4:          System.out.print("1");
+5:          try {
+6:              System.out.print("2");
+7:              int x = Integer.parseInt(name);
+8:              System.out.print("3");
+9:          } catch (NumberFormatException e) {
+10:             System.out.print("4");
+11:         }
+12:     }
+13:     public static void main(String... args) {
+14:         Dog webby = new Dog();
+15:         webby.name = "webby";
+16:         webby.runAway();
+17:         System.out.print("5");
+18:     } }
+
+A. 1234
+B. 1235
+C. 124
+D. 1245
+E. The code does not compile.
+F. An uncaught exception is thrown.
+G. None of the above
+
+Answer: D
+
+12. What is the output of the following program?
+
+1: public class Cat {
+2:      public String name;
+3:      public void knockStuffOver() {
+4:          System.out.print("1");
+5:          try {
+6:              System.out.print("2");
+7:              int x = Integer.parseInt(name);
+8:              System.out.print("3");
+9:          } catch (NullPointerException e) {
+10:             System.out.print("4");
+11:         }
+12:         System.out.print("5");
+13: }
+14: public static void main(String args[]) {
+15:     Cat loki = new Cat();
+16:     loki.name = "Loki";
+17:     loki.knockStuffOver();
+18:     System.out.print("6");
+19: } }
+
+A. The output is 12, followed by a stack trace for a NumberFormatException
+B. The output is 124, followed by a stack trace for a NumberFormatException
+C. The output is 12456
+D. The output is 1256, followed by a stack trace for a NumberFormatException.
+E. The code does not compile.
+F. An uncaught exception is thrown.
+G. None of the above.
+
+Answer: A
+
+13. Which of the following statements are true? (Choose all that apply.)
+
+A. You can declare a method with Exception as the return type.
+B. You can declare a method with RuntimeException as the return type.
+C. You can declare any subclass of Error in the throws part of a method declaration
+D. You can declare any subclass of Exception in the throws part of a method declaration.
+E. You can declare any subclass of Object in the throws part of a method declaration.
+F. You can declare any subclass of RuntimeException in the throws part of a method declaration.
+
+Answer: E, F
+
+14. Which of the following can be inserted on line 8 to make this code compile? (Choose all that apply.)
+
+7: public void whatHappensNext() throws IOException {
+8:      // INSERT CODE HERE
+9: }
+
+A. System.out.println("it's ok");
+B. throw new Exception();
+C. throw new IllegalArgumentException();
+D. throw new java.io.IOException();
+E. throw new RuntimeException();
+F. None of the above.
+
+Answer: D
+
+15. What is printed by the following program (Choose all that apply.)
+
+1: public class Help {
+2:      public void callSuperHero() {
+3:          try (String raspberry = new String("Olivia")) {
+4:              System.out.print("Q"); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
