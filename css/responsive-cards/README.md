@@ -12,6 +12,7 @@ Use vanilla CSS to build 3 cards.
 
 ##### 1. CSS responsive card and hover effects:
 https://www.youtube.com/watch?v=qXRYMdvq_Dc
-
+✅
 ##### 2. CSS card with hover animation and mobile fallback
 https://www.youtube.com/watch?v=5DEq5cWNYt8
+🚧
