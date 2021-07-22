@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codurance.NewspaperMachineShould" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-07-12T16:42:18" hostname="Toms-MacBook-Pro-2.local" time="0.01">
+  <properties/>
+  <testcase name="give_a_newspaper_when_correct_money_is_provided()" classname="com.codurance.NewspaperMachineShould" time="0.005"/>
+  <testcase name="give_a_newspaper_when_insert_50_then_100()" classname="com.codurance.NewspaperMachineShould" time="0.0"/>
+  <testcase name="throw_not_enough_money_exception_when_less_money_provided()" classname="com.codurance.NewspaperMachineShould" time="0.002"/>
+  <testcase name="refuse_newspaper_to_second_person_with_50_when_first_has_got_newspaper()" classname="com.codurance.NewspaperMachineShould" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

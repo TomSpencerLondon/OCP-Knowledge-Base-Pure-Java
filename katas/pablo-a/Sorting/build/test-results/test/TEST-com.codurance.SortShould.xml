@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codurance.SortShould" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-07-12T17:37:50" hostname="Toms-MacBook-Pro-2.local" time="0.011">
+  <properties/>
+  <testcase name="return_empty_array_for_null()" classname="com.codurance.SortShould" time="0.006"/>
+  <testcase name="return_single_entry_for_single_entry_array()" classname="com.codurance.SortShould" time="0.0"/>
+  <testcase name="return_sorted_array_for_five_numbers()" classname="com.codurance.SortShould" time="0.0"/>
+  <testcase name="return_sorted_array_for_four_numbers()" classname="com.codurance.SortShould" time="0.0"/>
+  <testcase name="return_sorted_array_for_two_sorted_numbers()" classname="com.codurance.SortShould" time="0.001"/>
+  <testcase name="return_sorted_array_for_two_numbers()" classname="com.codurance.SortShould" time="0.0"/>
+  <testcase name="return_sorted_array_for_three_unsorted_numbers()" classname="com.codurance.SortShould" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
