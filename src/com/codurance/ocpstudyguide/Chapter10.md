@@ -378,7 +378,112 @@ Answer: D
 2:      public void callSuperHero() {
 3:          try (String raspberry = new String("Olivia")) {
 4:              System.out.print("Q"); 
+5:          } catch (Error e) {
+6:              System.out.print("X");
+7:          } finally {
+8:              System.out.print("M");
+9:          }
+10:     }
+11:     public static void main(String[] args) {
+12:         new Help().callSuperHero();
+13:         System.out.print("S");
+14:     } }
 
+A. SQM
+B. QXMS
+C. QSM
+D. QMS
+E. A stack trace
+F. The code does not compile because the NumberFormatException is not declared or caught.
+G. None of the above.
+
+Answer: D
+
+16. Which of the following do not need to be handled or declared? (Choose all that apply.)
+A. ArrayIndexOutOfBoundsException
+B. IllegalArgumentException
+C. IOException
+D. Error
+E. NumberFormatException
+F. Any exception that extends RuntimeException
+G. Any exception that extends Exception
+
+Answer: A, B, F
+
+17. Which lines can fill in the blank to make the following code compile? (Choose all that apply.)
+
+void rollOut() throws ClassCastException {}
+
+    public void transform(String c) {
+        try {
+            rollOut();
+        } catch (IllegalArgumentException | ______________) {
+    }
+}
+
+A. IOException a
+B. Error b
+C. NullPointerException c
+D. RuntimeException d
+E. NumberFormatException e
+F. ClassCastException f
+G. None of the above. The code contains a compiler error regardless of what is inserted
+into the blank.
+
+Answer: G
+
+18. Which scenario is the best use of an exception?
+A. An element is not found when searching a list.
+B. An unexpected parameter is passed into a method.
+C. The computer caught fire.
+D. You want to loop through a list.
+E. You don't know how to code a method.
+
+Answer: B
+
+19. Which of the following can be inserted into Lion to make this code compile?
+(Choose all that apply.)
+
+class HasSoreThroatException extends Exception {}
+class TiredException extends RuntimeException {}
+interface Roar {
+    void roar() throws HasSoreThroatException;
+}
+
+class Lion implements Roar {
+    // INSERT CODE HERE
+}
+
+A. public void roar() {}
+B. public int roar() throws RuntimeException {}
+C. public void roar() throws Exception {}
+D. public void roar() throws HasSoreThroatException {}
+E. public void roar() throws IllegalArgumentException {}
+F. public void roar() throws TiredException {}
+
+Answer: C, D
+
+20. Which of the following are true? (Choose all that apply.)
+A. Checked exceptions are allowed but not required, to be handled or declared.
+B. Checked exceptions are required to be handled or declared.
+C. Errors are allowed but not required, to be handled or declared.
+D. Errors are required to be handled or declared.
+E. Unchecked exceptions are allowed but not required to be handled or declared.
+F. Unchecked exceptions are required to be handled or declared.
+
+Answer: B, D, E.
+
+21. Which of the following pairs fill in the blanks to make this code compile?
+(Choose all that apply.)
+
+6: public void ohNo(IOException ie) _______ Exception {
+7:      ___________ FileNotFoundException();
+8:      ___________ ie;
+9: }
+
+A. On line 6, fill in throw
+B. On line 6, fill in throws
+C. On line 7, fill in throw
 
 
 

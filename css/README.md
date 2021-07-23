@@ -44,6 +44,15 @@ https://css-tricks.com/almanac/
 
 https://geddski.teachable.com/p/flexbox-zombies
 
+- CSS Tricks also has good background information on flexbox:
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+![Screenshot 2021-07-23 at 08 44 21](https://user-images.githubusercontent.com/27693622/126752032-f994467b-ef15-4759-af27-83e08ab2c13a.png)
+
+![Screenshot 2021-07-23 at 08 44 32](https://user-images.githubusercontent.com/27693622/126752036-207003a3-bcde-4d65-bc66-e4f953222263.png)
+
+
 - Josh Comeau's blog includes lots of CSS tutorials, including many lessons plucked straight out of the course!
 
 #### The Rules of Margin Collapse
