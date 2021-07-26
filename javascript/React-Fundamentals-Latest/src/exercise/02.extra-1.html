@@ -1,0 +1,44 @@
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+  <script type="module">
+    const span1 = React.createElement('span', { id: 'span-1', children: 'hello'});
+    const span2 = React.createElement('span', { id: 'span-2', children: 'world!'});
+    const container = React.createElement('div', {id: 'container', children: [span1, ' ', span2]});
+    const rootElement = document.getElementById('root');
+    ReactDOM.render(container, rootElement);
+  </script>
+</body>
+
+<!--
+Extra Credit
+1. 💯 nesting elements
+Production deploy
+
+See if you can figure out how to write the JavaScript + React code to generate this DOM output:
+
+<body>
+  <div id="root">
+    <div class="container">
+      <span>Hello</span>
+      <span>World</span>
+    </div>
+  </div>
+</body>
+-->
+
+
+<!--
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+document.createElement
+div.textContent
+https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
+https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append
+https://github.com/kentcdodds/react-fundamentals/blob/main/src/exercise/01.html
+https://github.com/kentcdodds/react-fundamentals/blob/main/src/exercise/02.html
+https://github.com/kentcdodds/react-fundamentals/blob/main/src/exercise/02.html
+https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute
+https://reactjs.org/docs/react-api.html#createelement
+-->
