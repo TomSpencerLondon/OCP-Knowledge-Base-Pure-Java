@@ -49,7 +49,7 @@ GROUP BY first_name, last_name;
 SELECT(SUM(amount) / COUNT(distinct(employee_id))) as "Average Take Home Pay for All Employees in July"
 FROM employee
 INNER JOIN payslip USING(employee_id)
-LEFT JOIN payslip_item USING(payslip_id)
+LEFT OUTER JOIN payslip_item USING(payslip_id)
 WHERE pay_date like '2021-07-%';
 
 

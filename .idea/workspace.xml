@@ -20,13 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/collection/examples.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/dmitri/doc-info.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/dmitri/query-list.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structuredprogramming/Chapter1.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structuredprogramming/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/sql-practice/query-list.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/sql-practice/query-list.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +67,26 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sql/sqlpracticeproblems" />
+      <recent name="$PROJECT_DIR$/structuredprogramming" />
+    </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -101,7 +118,8 @@
       <option name="presentableId" value="Default" />
       <updated>1627209631581</updated>
       <workItem from="1627209633147" duration="3147000" />
-      <workItem from="1627365053790" duration="1939000" />
+      <workItem from="1627365053790" duration="2636000" />
+      <workItem from="1627369052518" duration="6879000" />
     </task>
     <servers />
   </component>
@@ -118,6 +136,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1448" y="-253" width="734" height="646" key="find.popup" timestamp="1627366425080">
