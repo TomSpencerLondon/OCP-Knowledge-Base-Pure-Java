@@ -20,15 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/codurance/ocpstudyguide/inheritance/Flyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/OCP-Spring-Javascript-KnowledgeBase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OCP-Spring-Javascript-KnowledgeBase.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OCP-Spring-Javascript-KnowledgeBase/META-INF/OCP-Spring-Javascript-KnowledgeBase.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OCP-Spring-Javascript-KnowledgeBase/com/codurance/ocpstudyguide/Chapter10.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OCP-Spring-Javascript-KnowledgeBase/com/codurance/ocpstudyguide/Chapter10.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OCP-Spring-Javascript-KnowledgeBase/hello.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codurance/ocpstudyguide/Chapter10.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codurance/ocpstudyguide/Chapter10.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +139,7 @@
       <workItem from="1627473308875" duration="1178000" />
       <workItem from="1627489130684" duration="2655000" />
       <workItem from="1627498159146" duration="1201000" />
-      <workItem from="1627544335906" duration="1648000" />
+      <workItem from="1627544335906" duration="3058000" />
     </task>
     <servers />
   </component>
