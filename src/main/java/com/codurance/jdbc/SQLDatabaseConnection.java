@@ -10,7 +10,7 @@ import static java.sql.DriverManager.*;
 
 public class SQLDatabaseConnection {
 
-    public static void main(String[] args) throws ClassNotFoundException {
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
         String url = "jdbc:mysql://127.0.0.1:3306/Northwind_SPP";
         Properties info = new Properties();
         info.put("user", "root");
@@ -25,10 +25,6 @@ public class SQLDatabaseConnection {
             while(rs.next()){
                 System.out.println(rs.getString("firstName"));
             }
-        }
-        // Handle any errors that may have occurred.
-        catch (SQLException e) {
-            e.printStackTrace();
         }
     }
 }
