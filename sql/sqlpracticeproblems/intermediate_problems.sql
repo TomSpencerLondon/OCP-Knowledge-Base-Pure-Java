@@ -11,8 +11,7 @@ ORDER BY count DESC;
 -- 21. Total customers per country/city
 -- In the Customers table, show the number of customers per Country and City.
 
-SELECT c.country, c.City,
-    (select count(*) from customers cust where cust.city = c.city) as total_customers
+SELECT c.country, c.City, COUNT(*) as total_customers
 FROM customers c
 GROUP BY c.country, c.City
 ORDER BY total_customers DESC;

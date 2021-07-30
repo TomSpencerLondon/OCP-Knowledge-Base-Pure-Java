@@ -6,7 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce8788e5-e9a3-4f06-94a8-71cb4870bfc5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/sqlpracticeproblems/intermediate_problems.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/sqlpracticeproblems/intermediate_problems.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
