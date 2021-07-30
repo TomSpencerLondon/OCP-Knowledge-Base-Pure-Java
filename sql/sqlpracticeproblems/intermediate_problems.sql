@@ -16,3 +16,4 @@ FROM customers c
 GROUP BY c.country, c.City
 ORDER BY total_customers DESC;
 
+
