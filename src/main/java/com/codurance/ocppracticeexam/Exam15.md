@@ -17,8 +17,13 @@
 
 ![Screenshot 2021-07-29 at 18 39 28](https://user-images.githubusercontent.com/27693622/127539398-40027e54-45aa-4324-b1cf-e50d7ef5a118.png)
 
+<<<<<<< HEAD:src/main/java/com/codurance/ocppracticeexam/Exam15.md
 #### Questions from Exam 16:
 ![Screenshot 2021-07-29 at 17 18 41](https://user-images.githubusercontent.com/27693622/127539377-a5378f58-b128-4380-ae4c-e44856e4de3b.png)
 
 ![Screenshot 2021-07-29 at 17 30 15](https://user-images.githubusercontent.com/27693622/127539379-31d1ff27-9b13-46c9-8d6c-c6dae631b61e.png)
+=======
+#### Use java docs for answers:
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
+>>>>>>> add:src/com/codurance/ocppracticeexam/README.md
 
