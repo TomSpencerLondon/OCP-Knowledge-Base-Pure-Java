@@ -1,6 +1,223 @@
 ##### Practice questions
 
+Q1. Which of the following implementations of a max() method will correctly return the largest value?
+Please select 1 option:
+
+A:
+
+int max (int x, int y) {
+    return ( if (x > y) { x; } else { y; } );
+}
+
+B:
+
+int max (int x, int y) {
+    return ( if (x > y) { return x; } else{ return y; });
+}
+
+C:
+
+int max(int x, int y) {
+    switch(x < y){
+        case true:
+            return y;
+        default:
+            return x;
+
+D:
+
+int max(int x, int y){
+    var m = x > y?x : y;
+    return m;
+}
+
+E:
+
+int max(var x, var y) {
+    if (x > y) return x;
+    return y;
+}
+
+Answer: D
+
+2. MOVE What is the result of compiling and running the following code?
+
+public class TestClass {
+    static int si = 10;
+    public static void main (String args[]) {
+        new TestClass();
+    }
+    public TestClass(){
+        System.out.println(this);
+    }
+    public String toString() {
+        return "TestClass.si = " + this.si;
+    }
+}
+
+Please select 1 option:
+A. The class will not compile because you cannot override toString() method.
+B. The class will not compile as si being static, this.si is not a valid statement.
+C. It will print TestClass@nnnnnnn, where nnnnnnn is the hash code of the TestClass object referred to by 'this'.
+D. It will print TestClass.si = 10
+E. None of the above
+
+Answer: D
+
+3:
+Consider the following program...
+
+class Super { }
+class Sub extends Super { }
+public class TestClass {
+    public static void main(String[] args) {
+        Super s1 = new Super();
+        Sub s2 = new Sub();
+        s1 = (Super) s2;
+    }
+}
+
+Which of the following statements are correct?
+Please select 1 option
+A. It will compile and run without any problems
+B. It will compile but WILL throw ClassCastException at runtime.
+C. It will compile but MAY throw ClassCastException at runtime.
+D. It will not compile.
+E. None of the above.
+
+Answer: A - A sub class can be cast to a Super class but not the other way round.
+
+4:
+What will be the result of compiling and running the following code?
+
+class Base {
+    public short getValue() { return 1; } // 1
+}
+
+class Base2 extends Base {
+    public byte getValue() return 2; } // 2
+}
+
+public class TestClass {
+    public static void main(String[] args) {
+        Base b = new Base();
+        System.out.println(b.getValue()); // 3
+    }
+}
+
+Please select 1 option
+A. It will print 1
+B. It will print 2
+C. Compile time error at // 1
+D. Compile time error at // 2
+E. Compile time error at // 3
+
+Answer: C - compile time error at // 1 - getValue() in Base2 has an incompatibile return
+type as it is overriding short getValue() from Base.
+
+5. 
+Given the following code:
+
+enum Title
+{
+    MR("Mr. "), MRS("Mrs. "), MS("Ms. ");
+    
+    private String title;
+    private Title(String s) {
+        title = s;
+    }
+    
+    public String format(String first, String last) {
+        return title+ " "+first+" "+last;
+    }
+}
+
+Identify valid code snippets ... 
+(Assume that Title is accessible wherever required)
+
+Please select 4 options
+
+A.
+class TestClass {
+    void someMethod()
+    {
+        System.out.println(Title.format("Rob", "Miller));
+    }
+}
+
+B.
+class TestClass {
+    void someMethod()
+    {
+        System.out.println(Title.MR.format("Rob", "Miller"));
+    }
+}
+
+C.
+class TestClass {
+    void someMethod()
+    {
+        System.out.println(MR.format("Rob", "Miller"));
+    }
+}
+
+D.
+enum Title2 extends Title
+{
+    DR("Dr. ");
+}
+
+E.
+class TestClass {
+    void someMethod()
+    {
+        Title.DR dr = new Title.DR("Dr. ");
+    }
+}
+
+F.
+enum Title2
+{
+    DR;
+    private Title t = Title.MR;
+}
+
+G.
+enum Title2
+{
+    DR;
+    private Title t = Title.MR;
+    public String format(String s){ return t.format(s, s); };
+}
+
+Answer: A, B, D, F
+
+6. Which of the following options are guidelines to protect confidential information?
+A. Confidential information should not be stored in the application
+B. Confidential and other information should be treated uniformly
+C. Access to confidential information should be limited.
+D. Objects containing confidential information should be encapsulated properly.
+E. Handle information transparently to improve diagnostics
+F. Clearly identify and label confidential information
+
+Answer: C, D, F
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ![Screenshot 2021-07-29 at 18 39 04](https://user-images.githubusercontent.com/27693622/127539393-349976a3-90a7-4129-96e5-9b81a3104abb.png)
+
+
 
 ![Screenshot 2021-07-29 at 18 38 56](https://user-images.githubusercontent.com/27693622/127539391-8f6d3d24-af37-4bd3-ab9a-a94cf8e2d62a.png)
 
