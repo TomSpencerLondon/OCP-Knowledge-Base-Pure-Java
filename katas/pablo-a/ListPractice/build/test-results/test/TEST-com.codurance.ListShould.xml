@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codurance.ListShould" tests="12" skipped="0" failures="0" errors="0" timestamp="2021-08-02T17:21:55" hostname="Toms-MacBook-Pro-2.local" time="0.091">
+  <properties/>
+  <testcase name="add_three_elements_and_remove_one_should_return_element()" classname="com.codurance.ListShould" time="0.077"/>
+  <testcase name="gets_second_element_from_list_with_two_elements()" classname="com.codurance.ListShould" time="0.001"/>
+  <testcase name="get_element_fromEmptyArray_throwsAnException()" classname="com.codurance.ListShould" time="0.004"/>
+  <testcase name="get_element_from_list_with_one_element_returns_the_element()" classname="com.codurance.ListShould" time="0.001"/>
+  <testcase name="have_sizeOfZero_when_empty()" classname="com.codurance.ListShould" time="0.001"/>
+  <testcase name="get_element_at_position_1_from_list_with_one_element_throwsException()" classname="com.codurance.ListShould" time="0.001"/>
+  <testcase name="add_three_elements_and_remove_one_should_have_sizeOfTwo()" classname="com.codurance.ListShould" time="0.001"/>
+  <testcase name="gets_first_element_from_list_with_two_elements()" classname="com.codurance.ListShould" time="0.0"/>
+  <testcase name="get_element_at_position_2_from_list_with_two_elements_throwsException()" classname="com.codurance.ListShould" time="0.0"/>
+  <testcase name="add_three_elements_and_remove_one_should_leave_element_zero()" classname="com.codurance.ListShould" time="0.0"/>
+  <testcase name="have_sizeOfOne_when_has_one_element()" classname="com.codurance.ListShould" time="0.0"/>
+  <testcase name="add_three_elements_and_remove_second_should_leave_third_as_second()" classname="com.codurance.ListShould" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
