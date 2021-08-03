@@ -5,6 +5,9 @@
 // eg. 1, 2, Fizz, 4, Buzz, 6, ... 14, FizzBuzz, 16
 //
 
+package com.codurance.algorithms.fizzbuzz;
+
+
 public class FizzBuzz {
     private int number;
     public FizzBuzz(int input){
