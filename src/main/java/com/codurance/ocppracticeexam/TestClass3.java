@@ -1,11 +1,13 @@
 package com.codurance.ocppracticeexam;
 
-//public class TestClass3 {
-//  void someMethod()
-//  {
-//    Title.DR dr = new Title.DR("Dr. ");
-//  }
-//}
+public class TestClass3 {
+  void someMethod()
+  {
+//    Title.DR dr = new Title.DR("Dr. ")
+//    System.out.println(Title.format("Rob", "Miller"));
+    System.out.println(Title.MR.format("Rob", "Miller"));
+  }
+}
 
 enum Title
 {
