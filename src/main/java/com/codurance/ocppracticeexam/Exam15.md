@@ -202,6 +202,34 @@ F. Clearly identify and label confidential information
 
 Answer: C, D, F
 
+7. Which of the following methods are available in java.io.Console?
+A. readPassword
+B. reader
+C. writer
+D. readLine
+E. read
+F. getPassword
+G. format
+
+flush() flushes the console and forces buffered output to be written immediately
+format(String fmt, Object... args) writes formatted string to the console's output stream using format string and arguments
+printf(String format, Object... args) A convenience method to write a formatted string to this console's output stream.
+reader() retrieves the unique Reader object associated with the console
+readLine() reads a single line of text from the console
+readPassword() reads a password or passphrase from the console with echoing disabled
+readPassword(String fmt, Object... args) Provides a formatted prompt, then reads password or passphrase from the console
+writer() retrieves the unique PrintWriter object associated with this console.
+
+Answer: readPassword, reader, writer, readLine, format
+
+8. Consider the following program...
+
+class ArrayTest {
+    public static void main(String[] args) {
+        var ia[][] = 
+    }
+}
+
 
 
 
