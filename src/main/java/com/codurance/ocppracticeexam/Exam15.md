@@ -226,14 +226,87 @@ Answer: readPassword, reader, writer, readLine, format
 
 class ArrayTest {
     public static void main(String[] args) {
-        var ia[][] = 
+        var ia[][] = { {1, 2}, null };
+        for (int i = 0; i < 2; i++){
+            for (int j = 0; j < 2; j++){
+                System.out.println(ia[i][j]);
+            }
+        }
     }
 }
 
+Which of the following statements are true?
 
+A. It will throw an ArrayIndexOutOfBoundsException at Runtime.
+B. It will throw a NullPointerException at Runtime.
+C. It will compile and run without throwing any exception.
+D. It will compile and throw a NullPointerException at runtime if var ia[][] = { {1, 2}, null}; is replaced with var
+ia = new int[][]{ {1, 2}, null};
+E. It will compile and throw a NullPointerException at runtime if var ia[][] = { {1, 2 }, null }; is replaced with
+var ia[][] = new int[][]{ {1, 2}, null };
 
+Answer: D
 
+9. Given:
+String qr = "insert into USERINFO values ( ?, ?, ?)";
+try (PreparedStatement ps = c.prepareStatement(qr);)
+{
+    ps.setObject(0, 1) // 1
+    ps.setObject(1, "Ally A", JDBCType.VARCHAR) // 2
+    ps.setObject(2, "101 main str"); // 3
+    ps.executeUpdate(); // 4
+    ps.setObject(1, "Bob B"); // 5
+    ps.setNull(2, java.sql.Types.VARCHAR) // 6
+    ps.executeUpdate() // 6
+}
 
+What will be the result?
+Please select 1 option
+A. Two rows with the following values will be inserted in teh USERINFO table:
+1, Ally A, 101 main str
+null Bob B, null
+
+B. Two rows with the following values will be inserted in the USERINFO table:
+1, Ally A, 101 main str
+1, Bob B, 101 main str 
+
+C. An exception will be thrown at //1.
+D. An exception will be thrown at //2.
+E. An exception will be thrown at //3.
+F. An exception will be thrown at //4.
+G. An exception will be thrown at //5.
+H. An exception will be thrown at //6.
+
+Answer: H - an exception will be thrown at line //6.
+
+10. What will the following code print when compiled and run?
+
+interface Eatable {
+    int types = 10;
+}
+
+class Food implements Eatable {
+    public static int types = 20;
+}
+
+public class Fruit extends Food implements Eatable { // LINE1
+
+    public static void main(String[] args) {
+        types = 38; // LINE2
+        System.out.println(types); // LINE 3
+    }
+}
+
+Please select 1 option
+A. Compilation failure at // LINE 1    
+B. Compilation failure at // LINE 2
+C. Compilation failure at // LINE 3
+D. 10
+E. 20
+F. 30
+G. Compilation failure at // LINE2 as well as at // LINE3
+
+Answer: G compilation failure at LINE2 and LINE3
 
 
 
