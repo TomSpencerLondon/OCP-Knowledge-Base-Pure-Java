@@ -25,10 +25,10 @@ class Food implements Eatable {
   public static int types = 20;
 }
 
-class Fruit extends Food implements Eatable { // LINE1
-
-  public static void main(String[] args) {
-    types = 38; // LINE2
-    System.out.println(types); // LINE 3
-  }
-}
+//class Fruit extends Food implements Eatable { // LINE1
+//
+//  public static void main(String[] args) {
+//    types = 38; // LINE2
+//    System.out.println(types); // LINE 3
+//  }
+//}

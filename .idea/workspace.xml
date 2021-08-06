@@ -23,10 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/project_euler/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/PreparedStatementPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/Exam15.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/Exam15.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEulerJava/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEulerJava/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEulerJava/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEulerJava/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEulerJava/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEulerJava/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEulerJava/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +76,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -92,7 +102,7 @@
       <recent name="$PROJECT_DIR$/sql/sqlpracticeproblems" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Fruit">
+  <component name="RunManager" selected="Application.PreparedStatementPractice">
     <configuration name="Fruit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.codurance.ocppracticeexam.Fruit" />
       <module name="OCP-Spring-Javascript-KnowledgeBase" />
@@ -132,24 +142,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SQLDatabaseConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.codurance.jdbc.SQLDatabaseConnection" />
+    <configuration name="PreparedStatementPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.codurance.ocppracticeexam.PreparedStatementPractice" />
       <module name="OCP-Spring-Javascript-KnowledgeBase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.codurance.jdbc.*" />
+          <option name="PATTERN" value="com.codurance.ocppracticeexam.*" />
           <option name="ENABLED" value="true" />
         </pattern>
-      </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -168,13 +168,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -201,19 +203,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.SQLDatabaseConnection" />
       <item itemvalue="Application.TestClass2" />
       <item itemvalue="Application.LinkedList" />
       <item itemvalue="Application.LinkedList (1)" />
       <item itemvalue="Application.Fruit" />
+      <item itemvalue="Application.PreparedStatementPractice" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PreparedStatementPractice" />
         <item itemvalue="Application.Fruit" />
         <item itemvalue="Application.LinkedList (1)" />
         <item itemvalue="Application.LinkedList" />
         <item itemvalue="Application.TestClass2" />
-        <item itemvalue="Application.SQLDatabaseConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -241,6 +243,7 @@
       <workItem from="1628089735437" duration="1639000" />
       <workItem from="1628108852364" duration="1051000" />
       <workItem from="1628169083617" duration="3712000" />
+      <workItem from="1628265956878" duration="2669000" />
     </task>
     <servers />
   </component>
@@ -264,10 +267,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="208" y="25" width="1024" height="803" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1627638694848" />
-    <state x="-1498" y="-484" width="1079" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1627993364812">
-      <screen x="-3360" y="-637" width="3360" height="1415" />
+    <state x="-4015" y="-547" width="655" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628268107352">
+      <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1627638889090" />
+    <state x="-4015" y="-547" width="655" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628268107352" />
     <state x="-1498" y="-484" width="1079" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1627993364812" />
     <state x="-1689" y="-277" key="#com.intellij.ide.util.MemberChooser" timestamp="1628034170967">
       <screen x="-3360" y="-637" width="3360" height="1415" />
@@ -277,45 +281,49 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="336" y="143" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1440.900@0.0.1440.900" timestamp="1627640821107" />
-    <state width="2346" height="410" key="GridCell.Tab.0.bottom" timestamp="1628034230279">
-      <screen x="-3360" y="-637" width="3360" height="1415" />
+    <state width="1760" height="522" key="GridCell.Tab.0.bottom" timestamp="1628270551484">
+      <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627645711197" />
     <state width="3360" height="494" key="GridCell.Tab.0.bottom/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254332" />
-    <state width="1612" height="158" key="GridCell.Tab.0.bottom/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1627498020089" />
+    <state width="1760" height="522" key="GridCell.Tab.0.bottom/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628270551484" />
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.25.1440.803@0.25.1440.803" timestamp="1627644052541" />
     <state width="2346" height="410" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628034230279" />
-    <state width="1792" height="498" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1627576039333" />
+    <state width="1760" height="522" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1628267793156" />
+    <state width="1760" height="522" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628267615771" />
     <state width="3360" height="494" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-662.3360.1440/-5120.-637.1760.1415@-3360.-662.3360.1440" timestamp="1627852819073" />
-    <state width="2346" height="410" key="GridCell.Tab.0.center" timestamp="1628034230278">
-      <screen x="-3360" y="-637" width="3360" height="1415" />
+    <state width="1760" height="522" key="GridCell.Tab.0.center" timestamp="1628270551482">
+      <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1627645711195" />
     <state width="3360" height="494" key="GridCell.Tab.0.center/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254331" />
-    <state width="1612" height="158" key="GridCell.Tab.0.center/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1627498020087" />
+    <state width="1760" height="522" key="GridCell.Tab.0.center/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628270551482" />
     <state width="1398" height="304" key="GridCell.Tab.0.center/0.25.1440.803@0.25.1440.803" timestamp="1627644052539" />
     <state width="2346" height="410" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628034230278" />
-    <state width="1792" height="498" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1627576039325" />
+    <state width="1760" height="522" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1628267793057" />
+    <state width="1760" height="522" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628267615334" />
     <state width="3360" height="494" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-662.3360.1440/-5120.-637.1760.1415@-3360.-662.3360.1440" timestamp="1627852819072" />
-    <state width="2346" height="410" key="GridCell.Tab.0.left" timestamp="1628034230276">
-      <screen x="-3360" y="-637" width="3360" height="1415" />
+    <state width="1760" height="522" key="GridCell.Tab.0.left" timestamp="1628270551480">
+      <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1627645711194" />
     <state width="3360" height="494" key="GridCell.Tab.0.left/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254330" />
-    <state width="1612" height="158" key="GridCell.Tab.0.left/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1627498020086" />
+    <state width="1760" height="522" key="GridCell.Tab.0.left/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628270551480" />
     <state width="1398" height="304" key="GridCell.Tab.0.left/0.25.1440.803@0.25.1440.803" timestamp="1627644052538" />
     <state width="2346" height="410" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628034230276" />
-    <state width="1792" height="498" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1627576039323" />
+    <state width="1760" height="522" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1628267792989" />
+    <state width="1760" height="522" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628267615291" />
     <state width="3360" height="494" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-662.3360.1440/-5120.-637.1760.1415@-3360.-662.3360.1440" timestamp="1627852819071" />
-    <state width="2346" height="410" key="GridCell.Tab.0.right" timestamp="1628034230279">
-      <screen x="-3360" y="-637" width="3360" height="1415" />
+    <state width="1760" height="522" key="GridCell.Tab.0.right" timestamp="1628270551483">
+      <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1627645711196" />
     <state width="3360" height="494" key="GridCell.Tab.0.right/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254331" />
-    <state width="1612" height="158" key="GridCell.Tab.0.right/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1627498020088" />
+    <state width="1760" height="522" key="GridCell.Tab.0.right/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628270551483" />
     <state width="1398" height="304" key="GridCell.Tab.0.right/0.25.1440.803@0.25.1440.803" timestamp="1627644052615" />
     <state width="2346" height="410" key="GridCell.Tab.0.right/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628034230279" />
-    <state width="1792" height="498" key="GridCell.Tab.0.right/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1627576039331" />
+    <state width="1760" height="522" key="GridCell.Tab.0.right/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1628267793100" />
+    <state width="1760" height="522" key="GridCell.Tab.0.right/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628267615440" />
     <state width="3360" height="494" key="GridCell.Tab.0.right/0.25.1792.1095/-3360.-662.3360.1440/-5120.-637.1760.1415@-3360.-662.3360.1440" timestamp="1627852819072" />
     <state x="-2033" y="-353" key="Maven.ArtifactSearchDialog" timestamp="1628033396314">
       <screen x="-3360" y="-637" width="3360" height="1415" />
@@ -345,11 +353,12 @@
       <screen x="-3360" y="-637" width="3360" height="1415" />
     </state>
     <state x="-1874" y="10" key="run.anything.popup/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628033412673" />
-    <state x="-2462" y="-328" width="1564" height="1064" key="search.everywhere.popup" timestamp="1628202199022">
-      <screen x="-3360" y="-637" width="3360" height="1415" />
+    <state x="-4650" y="-348" width="922" height="1083" key="search.everywhere.popup" timestamp="1628266692110">
+      <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1627645242312" />
     <state x="-2462" y="-348" width="1564" height="1082" key="search.everywhere.popup/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627846724880" />
+    <state x="-4650" y="-348" width="922" height="1083" key="search.everywhere.popup/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628266692110" />
     <state x="-2462" y="-328" width="1564" height="1064" key="search.everywhere.popup/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628202199022" />
   </component>
 </project>
