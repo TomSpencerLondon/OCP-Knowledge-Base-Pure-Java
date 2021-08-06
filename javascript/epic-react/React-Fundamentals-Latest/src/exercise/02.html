@@ -23,11 +23,22 @@
   // const elementType = 'h1'
   // const reactElement = React.createElement(elementType, elementProps)
   // ReactDOM.render(reactElement, rootElement)
+  //
+  // const elementProps = {id: 'hello-parent', children: 'Hello world'}
+  // const elementType = 'h1';
+  // const reactElement = React.createElement(elementType, elementProps);
+  // ReactDOM.render(reactElement, rootElement);
 
-  const elementProps = {id: 'hello-parent', children: 'Hello world!!'}
+  const span1Props = {key: 1, children: 'Hello'};
+  const span2Props = {key: 2, children: 'World'};
+  const spanType = 'span';
+  const span1 = React.createElement(spanType, span1Props)
+  const span2 = React.createElement(spanType, span2Props)
+  const reactElementProps = {className: "container", children: [span1, span2]}
   const elementType = 'div';
-  const reactElement = React.createElement(elementType, elementProps);
+  const reactElement = React.createElement(elementType, reactElementProps);
   ReactDOM.render(reactElement, rootElement);
+
 
   // 🐨 Please re-implement the regular document.createElement code above
   // with these React API calls
