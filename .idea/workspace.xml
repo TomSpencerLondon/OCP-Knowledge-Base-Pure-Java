@@ -23,24 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/AtomicIntegerExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/BasePractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/CastTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/CopyPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/DatabaseWrapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/HashMapPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/LocaleBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/OverridingMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/SumPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/TestArrayTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/TestClass4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/TestCompare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/TestStaticDeclarations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/TestStringBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/Exam15.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/Exam15.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +231,7 @@
       <workItem from="1628108852364" duration="1051000" />
       <workItem from="1628169083617" duration="3712000" />
       <workItem from="1628265956878" duration="2669000" />
-      <workItem from="1628439831194" duration="8556000" />
+      <workItem from="1628439831194" duration="9268000" />
     </task>
     <servers />
   </component>
@@ -288,45 +273,45 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="336" y="143" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1440.900@0.0.1440.900" timestamp="1627640821107" />
-    <state width="1760" height="564" key="GridCell.Tab.0.bottom" timestamp="1628456385774">
+    <state width="1760" height="564" key="GridCell.Tab.0.bottom" timestamp="1628458080414">
       <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627645711197" />
     <state width="3360" height="494" key="GridCell.Tab.0.bottom/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254332" />
-    <state width="1760" height="564" key="GridCell.Tab.0.bottom/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628456385774" />
+    <state width="1760" height="564" key="GridCell.Tab.0.bottom/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628458080414" />
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.25.1440.803@0.25.1440.803" timestamp="1627644052541" />
     <state width="2346" height="410" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628034230279" />
     <state width="1760" height="522" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1628267793156" />
     <state width="1760" height="522" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628267615771" />
     <state width="3360" height="494" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-662.3360.1440/-5120.-637.1760.1415@-3360.-662.3360.1440" timestamp="1627852819073" />
-    <state width="1760" height="564" key="GridCell.Tab.0.center" timestamp="1628456385771">
+    <state width="1760" height="564" key="GridCell.Tab.0.center" timestamp="1628458080413">
       <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1627645711195" />
     <state width="3360" height="494" key="GridCell.Tab.0.center/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254331" />
-    <state width="1760" height="564" key="GridCell.Tab.0.center/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628456385771" />
+    <state width="1760" height="564" key="GridCell.Tab.0.center/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628458080413" />
     <state width="1398" height="304" key="GridCell.Tab.0.center/0.25.1440.803@0.25.1440.803" timestamp="1627644052539" />
     <state width="2346" height="410" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628034230278" />
     <state width="1760" height="522" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1628267793057" />
     <state width="1760" height="522" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628267615334" />
     <state width="3360" height="494" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-662.3360.1440/-5120.-637.1760.1415@-3360.-662.3360.1440" timestamp="1627852819072" />
-    <state width="1760" height="564" key="GridCell.Tab.0.left" timestamp="1628456385770">
+    <state width="1760" height="564" key="GridCell.Tab.0.left" timestamp="1628458080412">
       <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1627645711194" />
     <state width="3360" height="494" key="GridCell.Tab.0.left/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254330" />
-    <state width="1760" height="564" key="GridCell.Tab.0.left/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628456385770" />
+    <state width="1760" height="564" key="GridCell.Tab.0.left/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628458080412" />
     <state width="1398" height="304" key="GridCell.Tab.0.left/0.25.1440.803@0.25.1440.803" timestamp="1627644052538" />
     <state width="2346" height="410" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628034230276" />
     <state width="1760" height="522" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1628267792989" />
     <state width="1760" height="522" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628267615291" />
     <state width="3360" height="494" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-662.3360.1440/-5120.-637.1760.1415@-3360.-662.3360.1440" timestamp="1627852819071" />
-    <state width="1760" height="564" key="GridCell.Tab.0.right" timestamp="1628456385773">
+    <state width="1760" height="564" key="GridCell.Tab.0.right" timestamp="1628458080413">
       <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1627645711196" />
     <state width="3360" height="494" key="GridCell.Tab.0.right/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254331" />
-    <state width="1760" height="564" key="GridCell.Tab.0.right/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628456385773" />
+    <state width="1760" height="564" key="GridCell.Tab.0.right/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628458080413" />
     <state width="1398" height="304" key="GridCell.Tab.0.right/0.25.1440.803@0.25.1440.803" timestamp="1627644052615" />
     <state width="2346" height="410" key="GridCell.Tab.0.right/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628034230279" />
     <state width="1760" height="522" key="GridCell.Tab.0.right/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1628267793100" />
