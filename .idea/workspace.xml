@@ -23,9 +23,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/main/java/com/codurance/Problem1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/test/java/com/codurance/Problem1Should.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/classes/com.codurance.FactorialShould.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/packages/com.codurance.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/packages/com.codurance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/TEST-com.codurance.FactorialShould.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/src/test/java/com/codurance/FactorialShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/test/java/com/codurance/FactorialShould.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,17 +176,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -232,6 +240,7 @@
       <workItem from="1628169083617" duration="3712000" />
       <workItem from="1628265956878" duration="2669000" />
       <workItem from="1628439831194" duration="9268000" />
+      <workItem from="1628492525866" duration="2549000" />
     </task>
     <servers />
   </component>
@@ -321,11 +330,12 @@
       <screen x="-3360" y="-637" width="3360" height="1415" />
     </state>
     <state x="-2033" y="-353" key="Maven.ArtifactSearchDialog/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628033396314" />
-    <state x="-4640" y="-382" key="SettingsEditor" timestamp="1628444073887">
-      <screen x="-5120" y="-662" width="1760" height="1440" />
+    <state x="-4640" y="-362" key="SettingsEditor" timestamp="1628492652988">
+      <screen x="-5120" y="-637" width="1760" height="1415" />
     </state>
     <state x="208" y="25" width="1024" height="803" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1627638789547" />
     <state x="-4640" y="-382" key="SettingsEditor/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628444073887" />
+    <state x="-4640" y="-362" key="SettingsEditor/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1628492652988" />
     <state x="-2444" y="-362" key="SettingsEditor/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-3360.-637.3360.1415" timestamp="1627993239866" />
     <state x="-1077" y="-161" key="chooseDestDirectoryDialog" timestamp="1627992512372">
       <screen x="-3360" y="-637" width="3360" height="1415" />

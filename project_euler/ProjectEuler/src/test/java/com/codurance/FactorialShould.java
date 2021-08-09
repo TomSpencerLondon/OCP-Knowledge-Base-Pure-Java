@@ -18,4 +18,11 @@ public class FactorialShould {
     int result = factorial.add(2);
     assertThat(result).isEqualTo(2);
   }
+
+  @Test
+  void return_six_for_three() {
+    final Factorial factorial = new Factorial();
+    int result = factorial.add(3);
+    assertThat(result).isEqualTo(6);
+  }
 }
