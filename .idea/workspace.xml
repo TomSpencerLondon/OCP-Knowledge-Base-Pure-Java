@@ -23,9 +23,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/main/java/com/codurance/Problem3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/test/java/com/codurance/Problem3Should.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/classes/com.codurance.Problem2Should.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/packages/com.codurance.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/packages/com.codurance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/TEST-com.codurance.Problem2Should.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/binary/results.bin" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +251,7 @@
       <workItem from="1628169083617" duration="3712000" />
       <workItem from="1628265956878" duration="2669000" />
       <workItem from="1628439831194" duration="9268000" />
-      <workItem from="1628492525866" duration="5431000" />
+      <workItem from="1628492525866" duration="7141000" />
     </task>
     <servers />
   </component>
@@ -339,10 +356,10 @@
       <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state x="-4607" y="-229" width="734" height="574" key="find.popup/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1627923302580" />
-    <state x="-4533" y="-471" key="new project wizard" timestamp="1628530839321">
+    <state x="-4533" y="-471" key="new project wizard" timestamp="1628550873372">
       <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
-    <state x="-4533" y="-471" key="new project wizard/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628530839321" />
+    <state x="-4533" y="-471" key="new project wizard/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628550873372" />
     <state x="-2240" y="-449" key="new project wizard/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628181021454" />
     <state x="-1457" y="-374" key="new project wizard/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-3360.-637.3360.1415" timestamp="1627989116832" />
     <state x="-2200" y="-407" key="new project wizard/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628093784427" />
@@ -351,12 +368,12 @@
     </state>
     <state x="-4342" y="-4" key="run.anything.popup/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628442654382" />
     <state x="-1874" y="10" key="run.anything.popup/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628033412673" />
-    <state x="-4650" y="-348" width="922" height="1083" key="search.everywhere.popup" timestamp="1628444796739">
+    <state x="-4650" y="-348" width="922" height="1083" key="search.everywhere.popup" timestamp="1628552280197">
       <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1627645242312" />
     <state x="-2462" y="-348" width="1564" height="1082" key="search.everywhere.popup/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627846724880" />
-    <state x="-4650" y="-348" width="922" height="1083" key="search.everywhere.popup/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628444796739" />
+    <state x="-4650" y="-348" width="922" height="1083" key="search.everywhere.popup/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628552280197" />
     <state x="-2462" y="-328" width="1564" height="1064" key="search.everywhere.popup/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628202199022" />
   </component>
 </project>
