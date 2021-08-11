@@ -3,16 +3,50 @@
 
 import * as React from 'react'
 
-function Greeting({initialName = ''}) {
-  const [name, setName] = React.useState(window.localStorage.getItem('name') || initialName)
+
+function useLocalStorageState(key,
+                              defaultValue = '',
+                              // the = {} fixes the error we would get from destructuring when no argument was passed
+                              // Check https://jacobparis.com/blog/destructure-arguments for a detailed explanation
+                              {
+                                serialize
+                                  = JSON.stringify,
+                                deserialize = JSON.parse} = {},
+){
+  const [state, setState] = React.useState(
+    () => {
+      const valueInLocalStorage = window.localStorage.getItem(key)
+      if (valueInLocalStorage){
+        try {
+          return deserialize(valueInLocalStorage)
+        }catch (error) {
+          window.localStorage.removeItem(key);
+        }
+      }
+      return typeof defaultValue === 'function' ? defaultValue() : defaultValue
+    })
+
+  const prevKeyRef = React.useRef(key)
 
   React.useEffect(() => {
-    window.localStorage.setItem('name', name)
-  })
+    const prevKey = prevKeyRef.current
+    if (prevKey !== key){
+      window.localStorage.removeItem(prevKey)
+    }
+    prevKeyRef.current = key
+    window.localStorage.setItem(key, serialize(state))
+  }, [key, state, serialize])
+
+  return [state, setState];
+}
+
+function Greeting({initialName = ''}) {
+  const [name, setName] = useLocalStorageState('name', 'Tom');
 
   function handleChange(event) {
     setName(event.target.value)
   }
+
   return (
     <div>
       <form>
