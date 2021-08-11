@@ -31,8 +31,14 @@ public class ParserShould {
     assertThat(parser.parse("<html></html>")).isInstanceOf(HTMLNode.class);
   }
 
+  @Test
+  void html_tag_with_head_tag_returns_html_with_head_tag_as_only_html_node() throws InvalidHTMLException {
+    final Parser parser = new Parser();
+    assertThat(parser.parse("<html><head></head></html>")).isInstanceOf(HTMLNode.class);
+    assertThat(parser.parse("<html><head></head></html>").children().get(0)).isInstanceOf(HeadNode.class);
+  }
 
-//<html>
+  //<html>
 //  <head>
 //    <meta charset="utf-8">
 //    <title></title>

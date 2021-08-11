@@ -1,4 +1,4 @@
-package com.codurance.ocppracticeexam;
+package com.codurance.ocppracticeexam.exam15;
 
 import java.util.ArrayList;
 import java.util.HashMap;

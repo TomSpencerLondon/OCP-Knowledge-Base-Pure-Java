@@ -1,4 +1,4 @@
-package com.codurance.ocppracticeexam;
+package com.codurance.ocppracticeexam.exam15;
 
 public class OverridingMethods {
 

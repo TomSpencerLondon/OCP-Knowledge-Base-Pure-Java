@@ -1,4 +1,4 @@
-package com.codurance.ocppracticeexam;
+package com.codurance.ocppracticeexam.exam15;
 //class Super { }
 //class Sub extends Super { }
 //public class TestClass2 {

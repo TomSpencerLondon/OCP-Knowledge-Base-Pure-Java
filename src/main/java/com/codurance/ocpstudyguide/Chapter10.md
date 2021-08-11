@@ -431,8 +431,12 @@ Answer: B, D, E.
 A. On line 6, fill in throw
 B. On line 6, fill in throws
 C. On line 7, fill in throw
+D. On line 7, fill in throw new
+E. On line 8, fill in throw
+F. On line 8, fill in throw new
+G. None of the above.
 
-
+Answer: 
 
 
 

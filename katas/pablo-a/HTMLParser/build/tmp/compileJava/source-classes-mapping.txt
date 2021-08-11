@@ -1,6 +1,10 @@
 com/codurance/InvalidHTMLException.java
  com.codurance.InvalidHTMLException
-com/codurance/HTMLNode.java
- com.codurance.HTMLNode
+com/codurance/HeadNode.java
+ com.codurance.HeadNode
+com/codurance/Node.java
+ com.codurance.Node
 com/codurance/Parser.java
  com.codurance.Parser
+com/codurance/HTMLNode.java
+ com.codurance.HTMLNode

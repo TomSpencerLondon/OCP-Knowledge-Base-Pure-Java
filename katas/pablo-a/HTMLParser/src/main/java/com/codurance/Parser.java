@@ -5,6 +5,7 @@ public class Parser {
     if (input == null || input.isEmpty()) {
       throw new InvalidHTMLException();
     }
+    
     return new HTMLNode();
   }
 }

@@ -1,4 +1,4 @@
-package com.codurance.ocppracticeexam;
+package com.codurance.ocppracticeexam.exam15;
 import java.io.*;
 public class TestClass4 {
   public static void main(String[] args) throws Exception {

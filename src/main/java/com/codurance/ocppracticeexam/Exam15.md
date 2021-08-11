@@ -626,6 +626,24 @@ E. It is not possible
 
 Answer: E - it is not possible
 
+30. Identify examples of autoboxing.
+Please select 3 options:
+A. Long l = Long.valueOf(200)
+B. Integer i = 10;
+C. Integer getValue(){ return 2; }
+D. Long getValue() { return 2; }
+E. System.out.println(2+"");
+
+Answer: B and C
+
+31. Which of the following are valid implementations of java.lang.Comparable?
+Please select 1 option:
+A. var cin = new Comparable<Integer>() {
+    public int compareTo(Integer i1, Integer i2) {
+        return i1.compareTo(i2);
+    }
+};
+
 ![Screenshot 2021-07-29 at 18 39 04](https://user-images.githubusercontent.com/27693622/127539393-349976a3-90a7-4129-96e5-9b81a3104abb.png)
 
 
