@@ -8,6 +8,7 @@ function getAllPosts() {
 async function fetchAllRepos() {
     try {
         const response = await getAllPosts();
+        throw new Error();
         return response.json();
     }catch (e) {
         console.log("Error found", e.message);

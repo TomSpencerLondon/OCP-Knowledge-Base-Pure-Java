@@ -10,7 +10,7 @@ route.get("/", async (req, res, next) => {
             apiData: apiData[0].id,
         });
     }catch (e) {
-        next("Request failed")
+        res.render("error", {error: "This failed"})
     }
 });
 
