@@ -23,8 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/api-practice/src/routes/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/api-practice/src/routes/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/Exam1.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/Exam1.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +229,8 @@
       <workItem from="1628683628698" duration="3171000" />
       <workItem from="1628718186432" duration="618000" />
       <workItem from="1628753111892" duration="3717000" />
-      <workItem from="1628803922476" duration="634000" />
+      <workItem from="1628803922476" duration="2221000" />
+      <workItem from="1628844301745" duration="536000" />
     </task>
     <servers />
   </component>

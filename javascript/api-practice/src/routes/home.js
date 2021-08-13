@@ -1,6 +1,6 @@
 const route = require('express').Router();
 const fetchAllRepos = require("../../api/apiConnection");
-
+import { getAllPosts } from '.'
 
 route.get("/", async (req, res, next) => {
     try {
