@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codurance.ListShould" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-08-04T17:14:08" hostname="Toms-MacBook-Pro-2.local" time="0.097">
+  <properties/>
+  <testcase name="throwAnException_when_get_on_empty_list()" classname="com.codurance.ListShould" time="0.026"/>
+  <testcase name="get_size_1_when_list_has_one_element()" classname="com.codurance.ListShould" time="0.056"/>
+  <testcase name="get_element_from_index_0_from_list_with_two_elements()" classname="com.codurance.ListShould" time="0.0"/>
+  <testcase name="throwAnException_when_requesting_index_minus1_on_one_elements_list()" classname="com.codurance.ListShould" time="0.002"/>
+  <testcase name="get_size_0_when_list_is_empty()" classname="com.codurance.ListShould" time="0.001"/>
+  <testcase name="get_element_from_index_1_from_list_with_two_elements()" classname="com.codurance.ListShould" time="0.001"/>
+  <testcase name="get_element_from_index_1_from_list_with_three_elements()" classname="com.codurance.ListShould" time="0.001"/>
+  <testcase name="get_size_2_when_list_has_two_elements()" classname="com.codurance.ListShould" time="0.001"/>
+  <testcase name="throwAnException_when_requesting_index_2_on_two_elements_list()" classname="com.codurance.ListShould" time="0.001"/>
+  <testcase name="get_element_from_index_0_from_list_with_one_element()" classname="com.codurance.ListShould" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

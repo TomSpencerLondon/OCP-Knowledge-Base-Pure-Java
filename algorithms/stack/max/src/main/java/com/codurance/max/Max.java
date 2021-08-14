@@ -1,4 +1,4 @@
-package com.codurance.max;
+package com.codurance.algorithms.stack.max.src.main.java.com.codurance.max;
 
 public class Max {
     public static void main(String[] args) {

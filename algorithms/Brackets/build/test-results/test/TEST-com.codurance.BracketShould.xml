@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codurance.BracketShould" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-09T17:52:35" hostname="Toms-MBP-2" time="0.006">
+  <properties/>
+  <testcase name="unbalanced_brackets_return_false()" classname="com.codurance.BracketShould" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

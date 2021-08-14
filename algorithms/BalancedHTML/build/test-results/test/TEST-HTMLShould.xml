@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HTMLShould" tests="1" skipped="1" failures="0" errors="0" timestamp="2021-08-09T19:26:35" hostname="Toms-MBP-2" time="12705.331">
+  <properties/>
+  <testcase name="return_true_for_html_tags()" classname="HTMLShould" time="12705.331">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

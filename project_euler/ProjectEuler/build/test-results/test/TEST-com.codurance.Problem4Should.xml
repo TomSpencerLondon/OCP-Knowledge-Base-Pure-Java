@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codurance.Problem4Should" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-08-10T07:36:45" hostname="Toms-MacBook-Pro-2.local" time="0.071">
+  <properties/>
+  <testcase name="largestPalindrome_for_two_digits()" classname="com.codurance.Problem4Should" time="0.053"/>
+  <testcase name="largestPalindrome_for_three_digits()" classname="com.codurance.Problem4Should" time="0.013"/>
+  <testcase name="returns_true_for_9009_is_palindrome()" classname="com.codurance.Problem4Should" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

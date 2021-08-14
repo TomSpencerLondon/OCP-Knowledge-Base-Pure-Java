@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codurance.SortShould" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-08-05T23:20:25" hostname="Toms-MBP-2" time="0.051">
+  <properties/>
+  <testcase name="four_elements_reversed_to_ordered_elements()" classname="com.codurance.SortShould" time="0.044"/>
+  <testcase name="list_of_three_sorted_elements_is_sorted()" classname="com.codurance.SortShould" time="0.001"/>
+  <testcase name="list_of_one_element_returns_list()" classname="com.codurance.SortShould" time="0.001"/>
+  <testcase name="three_elements_last_two_not_sorted()" classname="com.codurance.SortShould" time="0.0"/>
+  <testcase name="four_elements_last_two_not_sorted()" classname="com.codurance.SortShould" time="0.0"/>
+  <testcase name="two_elements_same_to_ordered_elements()" classname="com.codurance.SortShould" time="0.0"/>
+  <testcase name="list_of_two_elements_is_sorted()" classname="com.codurance.SortShould" time="0.0"/>
+  <testcase name="return_null_if_get_null()" classname="com.codurance.SortShould" time="0.0"/>
+  <testcase name="list_of_two_unsorted_elements_is_sorted()" classname="com.codurance.SortShould" time="0.001"/>
+  <testcase name="three_elements_reversed_to_ordered_elements()" classname="com.codurance.SortShould" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
