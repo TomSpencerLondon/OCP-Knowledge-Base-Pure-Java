@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codurance.Problem5Should" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-20T07:01:38" hostname="Toms-MBP-2" time="1.192">
+  <properties/>
+  <testcase name="finds_smallest_number_evenly_divisible_by_1_to_10()" classname="com.codurance.Problem5Should" time="0.072"/>
+  <testcase name="finds_smallest_number_evenly_divisible_by_1_to_20()" classname="com.codurance.Problem5Should" time="1.119"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
