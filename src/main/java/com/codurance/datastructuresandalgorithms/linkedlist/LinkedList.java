@@ -1,6 +1,6 @@
 package com.codurance.datastructuresandalgorithms.linkedlist;
-
-import org.apache.commons.lang3.builder.ToStringBuilder;
+//
+//import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.util.Iterator;
 
@@ -12,13 +12,13 @@ class Node {
     this.data = data;
   }
 
-  @Override
-  public String toString() {
-    return new ToStringBuilder(this)
-        .append("next", next)
-        .append("data", data)
-        .toString();
-  }
+//  @Override
+//  public String toString() {
+//    return new ToStringBuilder(this)
+//        .append("next", next)
+//        .append("data", data)
+//        .toString();
+//  }
 }
 
 public class LinkedList<T> implements Iterable<Node> {

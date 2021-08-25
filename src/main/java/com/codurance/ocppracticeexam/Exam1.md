@@ -81,5 +81,61 @@ E. All the variables will get a value of 9.
 
 Answer: C - The code will compile correctly and will display '9' when run.
 
+4. Given the following method code appearing in an application that manages files
+on a server machine:
 
+List<File> dir;
+public <R> List<R> executeFunction(Function<File, R> fun){
+    List<R> l = new ArrayList<R>();
+    for (File f : dir){
+        l.add(fun.apply(f));
+    }
+    return l;
+}
 
+/*
+The caller of this method passes in a Function that takes a java.io.File object
+and performs whatever operation is needed to be required that the above code
+must ensure that the caller only reads a file and is not able to overwrite or delete
+it irrespective of what level of permission the caller has. How can this
+be done?
+*/
+Please select 1 option
+
+A. Change the code inside the for loop as follows:
+
+AccessController.doPrivileged(new PrivilegedAction<Void>()) {
+    public Void run() {
+        l.add(fun.apply(f));
+        return null;
+    }}
+);
+
+B. Change the code inside the for loop as follows:
+Permission perm = new java.io.FilePermission(f.getPath(), "read");
+PermissionCollection perms = perm.newPermissionCollection();
+perms.add(perm);
+
+AccessController.doPrivileged(new PriviligedAction<Void>(){
+    public Void run() {
+    }},
+    new AccessControlContext(
+        new ProtectionDomain[] {
+            new ProtectionDomain(null, perms)
+        }
+    )
+);
+
+C. Change the code inside the for loop as follows:
+    Permission perm = new java.io.FilePrmission(f.getPath(), "read");
+    AccessController.doPrivileged(new PrivilegedAction<Void>(){
+        public Void run() {
+            l.add(fun.apply(f));
+            return null;
+        }
+    });
+    
+D. No code change is required. Modify the policy file to have only read
+permission to the given files.
+
+Answer: 
