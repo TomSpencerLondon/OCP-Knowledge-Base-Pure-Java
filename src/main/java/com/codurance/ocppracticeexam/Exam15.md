@@ -644,6 +644,96 @@ A. var cin = new Comparable<Integer>() {
     }
 };
 
+B. var cin = new Comparable<Integer>(){
+    public int compareTo(Integer i1){
+        return "100".compareTo(""+i1);
+    }
+};
+
+C. var cin = new Comparable<Integer>(){
+    int i = 10;
+    public int compare(Integer i1){
+        return i1-this.i;
+    }
+}
+
+D. var cin = new Comparable<Integer>(){
+    public int compareTo(Integer i1, Integer i2){
+        return i1 - i2;
+    }
+}
+
+Answer: B - It seems Comparable interface only has compareTo and this function
+only takes one parameter.
+
+32. Consider the following class definition:
+
+public class TestClass5 {
+    public static void main(String[] args) { new TestClass().sayHello(); } // 1
+    public static void sayHello() { System.out.println("Static Hello World"); } // 2
+    public void sayHello() { System.out.println("Hello world "); } // 3
+}
+
+What will be the result of compiling and running the class?
+Please select 1 option:
+A. It will print Hello World.
+B. It will print Static Hello World.
+C. Compilation error at line 2.
+D. Compilation error at line 3.
+E. Runtime error.
+
+Answer: C
+
+33. Which of the following are correct definitions of a repeatable annotation?
+
+A. @Repeatable
+   public @interface Author {
+    int id() default 0;
+    String name();
+   }
+
+B. @Repeatable
+   public @interface Author {
+    int id() default 0;
+    String name();
+   }
+
+C. @Repeatable(List<Author>)
+   public @interface Author {
+    int id() default 0;
+    String name();
+   }
+
+D. public @interface Author {
+       Author[] value();
+   }
+   @Repeatable(Authors.class)
+   public @interface Author {
+    int id() default 0;
+    String name();
+   }
+
+E. public class Authors {
+    Author[] value();
+   }
+   @Repeatable(Authors.class)
+   public @interface Author {
+    int id() default 0;
+    String name();
+   }
+
+F. public class Authors {
+    List<Author> authors;
+   }
+   
+   @Repeatable(Authors.class)
+   public @interface Author {
+    int id() default 0;
+    String name();
+   }
+
+Answer: 
+
 ![Screenshot 2021-07-29 at 18 39 04](https://user-images.githubusercontent.com/27693622/127539393-349976a3-90a7-4129-96e5-9b81a3104abb.png)
 
 
@@ -669,5 +759,4 @@ A. var cin = new Comparable<Integer>() {
 
 #### Use java docs for answers:
 https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
->>>>>>> add:src/com/codurance/ocppracticeexam/README.md
 

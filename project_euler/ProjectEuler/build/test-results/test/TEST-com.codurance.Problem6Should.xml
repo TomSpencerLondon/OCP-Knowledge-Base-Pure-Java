@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codurance.Problem6Should" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-09-03T06:29:08" hostname="Toms-MBP-2" time="0.07">
+  <properties/>
+  <testcase name="squareOfSumOfFirstTenNaturalNumbers()" classname="com.codurance.Problem6Should" time="0.065"/>
+  <testcase name="findSumOfSquaresOfFirstTenNaturalNumbers()" classname="com.codurance.Problem6Should" time="0.001"/>
+  <testcase name="differenceBetweenSumOfSquaresAndSquareOfSumOfFirst100NaturalNumbers()" classname="com.codurance.Problem6Should" time="0.002"/>
+  <testcase name="differenceBetweenSumOfSquaresAndSquareOfSumOfFirstTenNaturalNumbers()" classname="com.codurance.Problem6Should" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

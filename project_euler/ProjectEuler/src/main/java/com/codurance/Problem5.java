@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Problem5 {
-  public int smallestNumberDivisibleBy(List<Integer> integers) {
+  public int smallestNumberDivisibleByNumbersFrom(List<Integer> integers) {
     boolean match = false;
     int number = 20;
     int result = 0;

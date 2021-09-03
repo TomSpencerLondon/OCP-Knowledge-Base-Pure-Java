@@ -457,3 +457,6 @@ D. It will print 10, 10
 E. It will throw an exception when run.
 
 Answer: E. It will throw an exception when run.
+
+
+

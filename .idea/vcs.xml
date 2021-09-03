@@ -6,6 +6,7 @@
     <mapping directory="$PROJECT_DIR$/devops/aws-python" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/devops/image-analyzer-lambda-layer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/devops/ocr" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/javascript/dave/park-tennis-ladder" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/javascript/examples/Bank-React" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/project_euler/ProjectEulerJava" vcs="Git" />
   </component>
