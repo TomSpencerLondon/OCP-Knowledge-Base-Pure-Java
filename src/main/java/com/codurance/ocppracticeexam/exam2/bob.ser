@@ -1,0 +1,3 @@
+Student s = new Student();
+s.name = "bob";
+s.grade = "10";
