@@ -197,4 +197,137 @@ and is designed for reuse.
 B - The module system ensures that code is internal to a platform implementation
 is not accessible from outside the implementation.
 
-10. Which of the given 
+10. Which of the given options if put at //1 will correctly instantiate objects of
+various classes defined in the following code?
+
+public class TestClass {
+    public class A {
+    }
+    
+    public static class B {
+    }
+    public static void main(String args[]) {
+        class C {
+        }
+        // 1    
+    }
+}
+
+Please select 2 options
+A. new TestClass().new A();
+B. new TestClass().new B();
+C. new TestClass().A();
+D. new C();
+E. new TestClass.C();
+
+Answer: A - new TestClass().new A(), D - new C()
+
+11. Given:
+@Retention(value=RUNTIME)
+@Target(value={TYPE_USE,TYPE_PARAMETER)
+public @interface NonNull {
+}
+
+Identify correct usages.
+Please select 2 options:
+A. @NonNull String str = "";
+B. var str = @NonNull "";
+C. var str = (@NonNull String) "";
+D. Function<Integer, String> f = (Integer @NonNull val) -> Integer.toHexString(val);
+E. Function<Integer, String> f = (var @NonNull val) -> Integer.toHexString(val);
+F. Function<Integer, String> f = ( @NonNull val ) -> Integer.toHexString(val);
+
+Answer:
+A - @NonNull String str = "";
+C - var str = (@NonNull String) "";
+
+12. Which of the following are valid code snippets appearing in a method:
+Please 3 options
+A. var a = b = c = 100;
+B. var a = 100, b = 10; var a = b;
+C. int a, b, c = 100;
+D. int a = 100, b, c;
+E. int a = 100 = b = c;
+F. int a = b = c = 100;
+G. int a, b, c; a = b = c = 100;
+
+Answer: C, G
+
+13. Consider the following code snippet
+
+XXXX m ;
+// other code initializes m
+    switch( m ) {
+        case 32 : System.out.println("32"); break;
+        case 64 : System.out.println("64"); break;
+        case 128 : System.out.println("128"); break;
+    }
+    
+What type can 'm' be of so that the above code compiles and runs as expected ?
+Please select 3 options
+A. int m;
+B. long m;
+C. char m;
+D. byte m;
+E. short m;
+F. var m;
+
+Answer: A, C, D
+
+14. What will be the result of compiling and running the following code:
+
+float foo = 2, bar = 3, baz = 4; // 1
+float mod1 = foo % baz, mad2 = baz % foo; // 2
+
+float val = mod1 > mod2 ? bar : baz; // 3
+System.out.println(val);
+
+Please select 1 option
+A. Compilation error at //1
+B. Compilation error at //2
+C. Compilation error at //3
+D. 3
+E. 3.0
+F. 3.0f
+G. 4
+H. 4.0
+I. 4.0f
+
+Answer: E - 3.0
+
+15. Consider the following code appearing in a module-info.java
+
+module com.amazing.movies { // 1
+    exports com.amazing.movies; // 2
+    exports com.amazing.movies to com.amazing.rentals; // 3
+    requires transitive com.amazing.customer; //4
+}
+
+Identify correct statements.
+Please select 1 option
+A. This is a valid module info.
+B. This is an invalid module info because the name of the module and the
+name of a package that it exports are the same.
+C. This is an invalid module info because line marked //3 uses incorrect syntax.
+D. This is an invalid module info because lines marked //2 and //3 are in conflict.
+E. This is an invalid module info because lines marked //3 and //4 use incorect
+syntax.
+
+Answer: D
+
+16. Consider the following
+
+public class TestClass {
+    public static void main(String[] args){
+        TestClass tc = new TestClass();
+        tc.myMethod();
+    }
+    
+    public void myMethod() {
+        yourMethod();
+    }
+    
+    public void yourMethod() {
+        throw new Exception();
+    }
+}
