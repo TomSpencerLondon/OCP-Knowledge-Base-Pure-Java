@@ -317,7 +317,7 @@ Answer: D
 
 16. Consider the following
 
-public class TestClass {
+public class TestClass2 {
     public static void main(String[] args){
         TestClass tc = new TestClass();
         tc.myMethod();
@@ -331,3 +331,98 @@ public class TestClass {
         throw new Exception();
     }
 }
+
+What changes can be done to make the above code compile?
+Please select 1 option:
+A. Change declaration of main to:
+public static void main(String[] args) throws Exception
+B. Change declaration of myMethod to public void myMethod
+throws Exception
+C. Change declaration of yourMethod to public void yourMethod
+throws Exception
+D. Change declaration of main and yourMethod to:
+public static void main(String[] args) throws Exception
+and public void yourMethod throws Exception
+D. Change declaration of all the three method to include throws Exception.
+
+Answer: D - change declaration of all the three method to include throws Exception.
+
+17. What will the following code print when compiled and run?
+
+var nameList = new ArrayList<>();
+nameList.add("Ally");
+nameList.add("Billy");
+nameList.add("Cally");
+nameList.add("Billy");
+nameList.add("Ally");
+
+var nameSet1 = new HashSet<String>();
+for (var name : nameList) nameSet1.add(name);
+var nameSet2 = new HashSet<String>(nameList);
+System.out.println(nameList.size())+ " " + nameSet1.size() + " " + nameSet2.size();
+
+Please select 1 option:
+A. 5 3 5
+B. 5 3 3
+C. 5 3 1
+D. 3 3 1
+E. 5 5 5
+F. 5 5 1
+
+Answer: B - 5 3 3
+
+What if anything, is wrong with the following code:
+
+interface T1 {
+}
+interface T2 {
+    int VALUE = 10;
+    void m1();
+}
+
+interface T3 extends T1, T2 {
+    public void m1();
+    public void m1(int x);
+}
+
+Please select 1 option:
+A. T3 cannot implement both T1 and T2 because it leads to ambiguity.
+B. There is nothing wrong with the code.
+C. The code will work fine only if VALUE is removed from T2 interface.
+D. The code will work fine only if m1() is removed from either T2 and T3.
+E. None of the above.
+
+Answer: B - there is nothing wrong with the code.
+
+19. Your application is packaged in myapp.jar and depends on a jar named
+datalayer.jar, which in turn depends on mysql-connector-java-8.0.11.jar.
+The following packages exist in these jars:
+
+myapp.jar: com.abc.myapp
+datalayer.jar: com.abc.datalayer
+mysql-connector-8.0.11.jar: com.mysql.jdbc
+
+You want to use bottom up approach for migrating your app to a modular
+app. Which of the following is required before you can do this?
+Please select 1 option
+A. Mysql driver jar and datalayer.jar must first be converted into modular jars.
+B. datalayer.jar must first be converted into modular
+jar. The mysql jar need not be converted.
+C. The mysql jar must first be converted into modular.jar. The datalayer.jar
+need not be converted.
+D. Neither datalayer nor mysql driver need to be converted into modular jars.
+
+Answer: A - Mysql driver jar and datalayer.jar must first be converted into modular
+jars.
+
+20. Which of the following statements are correct regarding the module system of Java.
+Please select 2 options:
+A. Although not recommended, it is possible to customize what packages a module
+exports from the command line.
+B. An advantage of java modules functionality is that users of a module cannot
+alter the list of exported packages of that module.
+C. If a module does not export a package, there is no way to export that
+package to all other modules from the command line.
+D. If a module wants to read another module but only temporarily, it can request
+such access using command line options.
+E. A module can request access to another module temporarily using command line 
