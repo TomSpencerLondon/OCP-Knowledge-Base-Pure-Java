@@ -23,20 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/main/java/com/codurance/Problem7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/test/java/com/codurance/Problem7Should.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam2/HashSetPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam2/T1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam2/TestClass2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/OCP-Spring-Javascript-KnowledgeBase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OCP-Spring-Javascript-KnowledgeBase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/main/java/com/codurance/Problem8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/test/java/com/codurance/Problem8Should.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/examples/Bank-React/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/examples/Bank-React/.github/workflows/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -45,14 +39,11 @@
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/classes/com.codurance.Problem6Should.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/classes/com.codurance.Problem7Should.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/packages/com.codurance.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/packages/com.codurance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/TEST-com.codurance.Problem6Should.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/Exam2.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/Exam2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/TEST-com.codurance.Problem7Should.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/binary/results.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
