@@ -29,7 +29,11 @@ package com.codurance;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class Problem8Should {
 
@@ -55,7 +59,7 @@ public class Problem8Should {
       "71636269561882670428252483600823257530420752963450";
 
   @Test
-  void four_digits_with_largest_product_number() {
+  void largest_product_number_for_four_digits() {
     final Problem8 problem8 = new Problem8(longNumber);
 
     final long largestProductFor = problem8.findLargestProductFor(4);
@@ -64,11 +68,29 @@ public class Problem8Should {
   }
 
   @Test
-  void thirteen_digits_with_largest_product_number() {
+  void finds_four_digits_with_largest_product_number() {
+    final Problem8 problem8 = new Problem8(longNumber);
+    problem8.findLargestProductFor(4);
+    final List<Integer> productNumbers = problem8.productNumbers;
+
+    assertThat(productNumbers).containsOnly(9, 9, 8, 9);
+  }
+
+  @Test
+  void largest_product_number_for_thirteen_digits() {
     final Problem8 problem8 = new Problem8(longNumber);
 
     final long largestProductFor = problem8.findLargestProductFor(13);
 
     assertThat(largestProductFor).isEqualTo(23_514_624_000L);
+  }
+
+  @Test
+  void finds_13_digits_with_largest_product_number() {
+    final Problem8 problem8 = new Problem8(longNumber);
+    problem8.findLargestProductFor(13);
+    final List<Integer> productNumbers = problem8.productNumbers;
+
+    assertThat(productNumbers).containsOnly(5, 5, 7, 6, 6, 8, 9, 6, 6, 4, 8, 9, 5);
   }
 }

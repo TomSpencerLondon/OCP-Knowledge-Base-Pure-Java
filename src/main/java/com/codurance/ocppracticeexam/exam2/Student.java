@@ -13,12 +13,12 @@ public class Student implements Serializable {
     }
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        File file = new File(System.getProperty("user.dir") + "/src/main/java/com/codurance/ocppracticeexam/exam2/bob.ser");
-        FileInputStream fis = new FileInputStream(file);
-        ObjectInputStream is = new ObjectInputStream(fis);
-        Student s = (Student) is.readObject();
-        is.close();
-        System.out.println("Loaded " + s);
+//        File file = new File(System.getProperty("user.dir") + "/src/main/java/com/codurance/ocppracticeexam/exam2/bob.ser");
+//        FileInputStreamPactice fis = new FileInputStreamPactice(file);
+//        ObjectInputStream is = new ObjectInputStream(fis);
+//        Student s = (Student) is.readObject();
+//        is.close();
+//        System.out.println("Loaded " + s);
     }
 }
 
