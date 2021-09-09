@@ -16,10 +16,14 @@ class MarsRoverTest(unittest.TestCase):
         self.assertEqual("0:0:N", result)
 
     @parameterized.expand([
-        ('R', 'E')
+        ('R', 'E'),
+        ('RR', 'S'),
+        ('RRR', 'W'),
+        ('RRRR', 'N'),
+        ('RRRRR', 'E')
     ])
     def test_return_0_0_E_for_R(self, input, direction):
-        result = self.rover.execute("R")
+        result = self.rover.execute(input)
         self.assertEqual(f"0:0:{direction}", result)
 
 if __name__ == '__main__':

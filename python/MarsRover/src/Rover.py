@@ -7,7 +7,20 @@ class Rover:
 
     def execute(self, input):
         direction: Direction = Direction.NORTH
-        if (input == "R"):
-            direction = Direction.EAST
+        commands = [ch for ch in input]
+
+        for c in commands:
+            if (c == 'R'):
+                direction = self.turnRight(direction)
 
         return f"0:0:{direction.value}"
+
+    def turnRight(self, direction):
+        switcher = {
+            Direction.NORTH: Direction.EAST,
+            Direction.EAST: Direction.SOUTH,
+            Direction.SOUTH: Direction.WEST,
+            Direction.WEST: Direction.NORTH
+        }
+
+        return switcher.get(direction, Direction.NORTH)
