@@ -1,3 +1,4 @@
+from src.Direction import Direction
 from src.Grid import Grid
 
 class Rover:
@@ -5,6 +6,8 @@ class Rover:
         self.grid = grid
 
     def execute(self, input):
+        direction: Direction = Direction.NORTH
         if (input == "R"):
-            return "0:0:E"
-        return "0:0:N"
+            direction = Direction.EAST
+
+        return f"0:0:{direction.value}"

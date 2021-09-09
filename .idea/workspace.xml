@@ -23,16 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam2/FileInputStreamPactice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam2/FunWithArgs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam2/MyProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam2/StudentConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam2/TestClass3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/test/java/com/codurance/Problem11Should.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam3/FunctionPractice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam3/ListTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/OCP-Spring-Javascript-KnowledgeBase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OCP-Spring-Javascript-KnowledgeBase.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/examples/Bank-React/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/examples/Bank-React/.github/workflows/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam2/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam2/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +99,7 @@
       <recent name="$PROJECT_DIR$/sql/sqlpracticeproblems" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StudentConsumer">
+  <component name="RunManager" selected="Application.ListTypes">
     <configuration name="FileInputStreamPactice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.codurance.ocppracticeexam.exam2.FileInputStreamPactice" />
       <module name="OCP-Spring-Javascript-KnowledgeBase" />
@@ -114,50 +113,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunWithArgs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.codurance.ocppracticeexam.exam2.FunWithArgs" />
+    <configuration name="FunctionPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.codurance.ocppracticeexam.exam3.FunctionPractice" />
       <module name="OCP-Spring-Javascript-KnowledgeBase" />
-      <option name="PROGRAM_PARAMETERS" value="a b c" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.codurance.ocppracticeexam.exam2.*" />
+          <option name="PATTERN" value="com.codurance.ocppracticeexam.exam3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
-      </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashSetPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="14" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.codurance.ocppracticeexam.exam2.HashSetPractice" />
+    <configuration name="ListTypes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.codurance.ocppracticeexam.exam3.ListTypes" />
       <module name="OCP-Spring-Javascript-KnowledgeBase" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.codurance.ocppracticeexam.exam2.*" />
+          <option name="PATTERN" value="com.codurance.ocppracticeexam.exam3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
-      </extension>
-      <extension name="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
-        </ENTRIES>
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -189,15 +165,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -224,19 +198,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.HashSetPractice" />
-      <item itemvalue="Application.FunWithArgs" />
       <item itemvalue="Application.TestClass3" />
       <item itemvalue="Application.FileInputStreamPactice" />
       <item itemvalue="Application.StudentConsumer" />
+      <item itemvalue="Application.FunctionPractice" />
+      <item itemvalue="Application.ListTypes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListTypes" />
+        <item itemvalue="Application.FunctionPractice" />
         <item itemvalue="Application.StudentConsumer" />
         <item itemvalue="Application.FileInputStreamPactice" />
         <item itemvalue="Application.TestClass3" />
-        <item itemvalue="Application.FunWithArgs" />
-        <item itemvalue="Application.HashSetPractice" />
       </list>
     </recent_temporary>
   </component>
@@ -288,6 +262,7 @@
       <workItem from="1630991992084" duration="1851000" />
       <workItem from="1631030762586" duration="1231000" />
       <workItem from="1631041908707" duration="2521000" />
+      <workItem from="1631172658649" duration="2388000" />
     </task>
     <servers />
   </component>
@@ -336,45 +311,45 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="336" y="143" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1440.900@0.0.1440.900" timestamp="1627640821107" />
-    <state width="1653" height="348" key="GridCell.Tab.0.bottom" timestamp="1631053678746">
-      <screen x="-3360" y="-637" width="3360" height="1415" />
+    <state width="1760" height="530" key="GridCell.Tab.0.bottom" timestamp="1631174155457">
+      <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627645711197" />
     <state width="3360" height="494" key="GridCell.Tab.0.bottom/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254332" />
-    <state width="1760" height="564" key="GridCell.Tab.0.bottom/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628702030024" />
+    <state width="1760" height="530" key="GridCell.Tab.0.bottom/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1631174155457" />
     <state width="1256" height="254" key="GridCell.Tab.0.bottom/0.25.1440.803@0.25.1440.803" timestamp="1630779040197" />
     <state width="1653" height="348" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1631053678746" />
     <state width="1653" height="348" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1631044882328" />
     <state width="1760" height="564" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628710778727" />
     <state width="3360" height="494" key="GridCell.Tab.0.bottom/0.25.1792.1095/-3360.-662.3360.1440/-5120.-637.1760.1415@-3360.-662.3360.1440" timestamp="1627852819073" />
-    <state width="1653" height="348" key="GridCell.Tab.0.center" timestamp="1631053678746">
-      <screen x="-3360" y="-637" width="3360" height="1415" />
+    <state width="1760" height="530" key="GridCell.Tab.0.center" timestamp="1631174155436">
+      <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1627645711195" />
     <state width="3360" height="494" key="GridCell.Tab.0.center/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254331" />
-    <state width="1760" height="564" key="GridCell.Tab.0.center/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628702030017" />
+    <state width="1760" height="530" key="GridCell.Tab.0.center/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1631174155436" />
     <state width="1256" height="254" key="GridCell.Tab.0.center/0.25.1440.803@0.25.1440.803" timestamp="1630779040197" />
     <state width="1653" height="348" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1631053678746" />
     <state width="1653" height="348" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1631044882326" />
     <state width="1760" height="564" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628710778725" />
     <state width="3360" height="494" key="GridCell.Tab.0.center/0.25.1792.1095/-3360.-662.3360.1440/-5120.-637.1760.1415@-3360.-662.3360.1440" timestamp="1627852819072" />
-    <state width="1653" height="348" key="GridCell.Tab.0.left" timestamp="1631053678745">
-      <screen x="-3360" y="-637" width="3360" height="1415" />
+    <state width="1760" height="530" key="GridCell.Tab.0.left" timestamp="1631174155427">
+      <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1627645711194" />
     <state width="3360" height="494" key="GridCell.Tab.0.left/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254330" />
-    <state width="1760" height="564" key="GridCell.Tab.0.left/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628702030015" />
+    <state width="1760" height="530" key="GridCell.Tab.0.left/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1631174155427" />
     <state width="1256" height="254" key="GridCell.Tab.0.left/0.25.1440.803@0.25.1440.803" timestamp="1630779040196" />
     <state width="1653" height="348" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1631053678745" />
     <state width="1653" height="348" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1631044882325" />
     <state width="1760" height="564" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628710778725" />
     <state width="3360" height="494" key="GridCell.Tab.0.left/0.25.1792.1095/-3360.-662.3360.1440/-5120.-637.1760.1415@-3360.-662.3360.1440" timestamp="1627852819071" />
-    <state width="1653" height="348" key="GridCell.Tab.0.right" timestamp="1631053678746">
-      <screen x="-3360" y="-637" width="3360" height="1415" />
+    <state width="1760" height="530" key="GridCell.Tab.0.right" timestamp="1631174155441">
+      <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state width="1398" height="304" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1627645711196" />
     <state width="3360" height="494" key="GridCell.Tab.0.right/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-3360.-662.3360.1440" timestamp="1627847254331" />
-    <state width="1760" height="564" key="GridCell.Tab.0.right/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1628702030019" />
+    <state width="1760" height="530" key="GridCell.Tab.0.right/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1631174155441" />
     <state width="1256" height="254" key="GridCell.Tab.0.right/0.25.1440.803@0.25.1440.803" timestamp="1630779040197" />
     <state width="1653" height="348" key="GridCell.Tab.0.right/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1631053678746" />
     <state width="1653" height="348" key="GridCell.Tab.0.right/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1631044882327" />
@@ -384,11 +359,11 @@
       <screen x="-3360" y="-637" width="3360" height="1415" />
     </state>
     <state x="-2033" y="-353" key="Maven.ArtifactSearchDialog/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1628033396314" />
-    <state x="-2444" y="-362" key="SettingsEditor" timestamp="1630877800521">
-      <screen x="-3360" y="-637" width="3360" height="1415" />
+    <state x="-4640" y="-382" key="SettingsEditor" timestamp="1631174301318">
+      <screen x="-5120" y="-662" width="1760" height="1440" />
     </state>
     <state x="208" y="25" width="1024" height="803" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1627638789547" />
-    <state x="-4640" y="-382" key="SettingsEditor/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1629403700730" />
+    <state x="-4640" y="-382" key="SettingsEditor/0.0.1792.1120/-3360.-662.3360.1440/-5120.-662.1760.1440@-5120.-662.1760.1440" timestamp="1631174301318" />
     <state x="-2444" y="-362" key="SettingsEditor/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-3360.-637.3360.1415" timestamp="1630877800521" />
     <state x="-4640" y="-362" key="SettingsEditor/0.25.1792.1095/-3360.-637.3360.1415/-5120.-637.1760.1415@-5120.-637.1760.1415" timestamp="1628492652988" />
     <state x="-2444" y="-362" key="SettingsEditor/0.25.1792.1095/-3360.-637.3360.1415/-5120.-662.1760.1440@-3360.-637.3360.1415" timestamp="1627993239866" />
