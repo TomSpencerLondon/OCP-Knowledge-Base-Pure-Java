@@ -82,4 +82,12 @@ public class Problem11Should {
 
     assertThat(rightDown).isEqualTo(24_468_444);
   }
+
+  @Test
+  void getDown() {
+    final Problem11 problem11 = new Problem11(numbers);
+    final Integer rightDown = problem11.getDown(new Position(0, 0));
+
+    assertThat(rightDown).isEqualTo(1_651_104);
+  }
 }

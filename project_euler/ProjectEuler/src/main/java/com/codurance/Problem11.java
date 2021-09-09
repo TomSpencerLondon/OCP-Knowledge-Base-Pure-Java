@@ -49,4 +49,18 @@ public class Problem11 {
 
     return list.stream().reduce(1, (a, b) -> a * b);
   }
+
+  public Integer getDown(Position position) {
+    if (position.x > 19 || position.y > 16) {
+      return 0;
+    }
+
+    List<Integer> list = new ArrayList<>();
+    list.add(numbers.get(position.y).get(position.x));
+    list.add(numbers.get(position.y + 1).get(position.x));
+    list.add(numbers.get(position.y + 2).get(position.x));
+    list.add(numbers.get(position.y + 3).get(position.x));
+
+    return list.stream().reduce(1, (a, b) -> a * b);
+  }
 }
