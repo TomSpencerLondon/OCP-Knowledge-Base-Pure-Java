@@ -11,6 +11,7 @@ class Rover:
     def execute(self, input):
         direction: Direction = Direction.NORTH
         commands = [ch for ch in input]
+        obstacle = ""
 
         for c in commands:
             if (c == 'R'):
@@ -18,9 +19,13 @@ class Rover:
             elif(c == 'L'):
                 direction = self.turnLeft(direction)
             elif(c == 'M'):
-                self.position = self.grid.move(direction, self.position)
+                try:
+                    self.position = self.grid.move(direction, self.position)
+                except:
+                    obstacle = "O:"
+                    break
 
-        return f"{self.position.x}:{self.position.y}:{direction.value}"
+        return f"{obstacle}{self.position.x}:{self.position.y}:{direction.value}"
 
     def turnRight(self, direction):
         switcher = {

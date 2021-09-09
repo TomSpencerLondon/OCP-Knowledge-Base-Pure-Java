@@ -11,3 +11,8 @@ class Position(object):
     @property
     def y(self):
         return self._y
+
+    def __eq__(self, other):
+        if isinstance(other, Position):
+            return self._x == other.x and self._y == other.y
+        return NotImplemented

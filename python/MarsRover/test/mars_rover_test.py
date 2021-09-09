@@ -2,6 +2,7 @@ import unittest
 
 from parameterized import parameterized
 from src.Grid import Grid
+from src.Position import Position
 from src.Rover import Rover
 
 
@@ -47,6 +48,13 @@ class MarsRoverTest(unittest.TestCase):
     def test_move(self, input, x, y, direction):
         result = self.rover.execute(input)
         self.assertEqual(f"{x}:{y}:{direction}", result)
+
+    def test_obstacle(self):
+        command = 'MMMM'
+        self.grid = Grid([Position(0, 3)])
+        self.rover = Rover(self.grid)
+        result = self.rover.execute(command)
+        self.assertEqual("O:0:2:N", result)
 
 if __name__ == '__main__':
     unittest.main()
