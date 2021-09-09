@@ -1,7 +1,4 @@
-import grid as grid
-
-from src import Grid
-
+from src.Grid import Grid
 
 class Rover:
     def __init__(self, grid):
