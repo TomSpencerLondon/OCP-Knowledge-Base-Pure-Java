@@ -15,6 +15,14 @@ public class Problem10Should {
   }
 
   @Test
+  void sumOfPrimesBelow2_000_000() {
+    final Problem10 problem10 = new Problem10();
+    String sum = problem10.sumOfPrimesBelow(2_000_000);
+
+    assertThat(sum).isEqualTo("142913828922");
+  }
+
+  @Test
   void checkForPrimeFor5() {
     final Problem10 problem10 = new Problem10();
     final boolean prime = problem10.isPrime(5);

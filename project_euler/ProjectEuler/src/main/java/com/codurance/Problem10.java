@@ -2,7 +2,7 @@ package com.codurance;
 
 public class Problem10 {
   public String sumOfPrimesBelow(int number) {
-    int sum = 2;
+    long sum = 2L;
 
     for (int i = 3; i < number; i += 2){
       if (isPrime(i)){
