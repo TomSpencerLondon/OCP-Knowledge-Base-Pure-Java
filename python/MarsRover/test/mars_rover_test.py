@@ -22,7 +22,18 @@ class MarsRoverTest(unittest.TestCase):
         ('RRRR', 'N'),
         ('RRRRR', 'E')
     ])
-    def test_return_0_0_E_for_R(self, input, direction):
+    def test_turn_right(self, input, direction):
+        result = self.rover.execute(input)
+        self.assertEqual(f"0:0:{direction}", result)
+
+    @parameterized.expand([
+        ('L', 'W'),
+        ('LL', 'S'),
+        ('LLL', 'E'),
+        ('LLLL', 'N'),
+        ('LLLLL', 'W')
+    ])
+    def test_turn_left(self, input, direction):
         result = self.rover.execute(input)
         self.assertEqual(f"0:0:{direction}", result)
 

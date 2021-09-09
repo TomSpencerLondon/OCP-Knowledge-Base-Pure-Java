@@ -12,6 +12,9 @@ class Rover:
         for c in commands:
             if (c == 'R'):
                 direction = self.turnRight(direction)
+            elif(c == 'L'):
+                direction = self.turnLeft(direction)
+
 
         return f"0:0:{direction.value}"
 
@@ -22,5 +25,13 @@ class Rover:
             Direction.SOUTH: Direction.WEST,
             Direction.WEST: Direction.NORTH
         }
+        return switcher.get(direction, Direction.NORTH)
 
+    def turnLeft(self, direction):
+        switcher = {
+            Direction.NORTH: Direction.WEST,
+            Direction.WEST: Direction.SOUTH,
+            Direction.SOUTH: Direction.EAST,
+            Direction.EAST: Direction.NORTH
+        }
         return switcher.get(direction, Direction.NORTH)
