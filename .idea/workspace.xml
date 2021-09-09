@@ -23,15 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/test/java/com/codurance/Problem11Should.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam3/FunctionPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codurance/ocppracticeexam/exam3/ListTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/OCP-Spring-Javascript-KnowledgeBase.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/OCP-Spring-Javascript-KnowledgeBase.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/examples/Bank-React/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/examples/Bank-React/.github/workflows/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/MarsRover/src/Grid.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/MarsRover/src/Grid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/MarsRover/src/Rover.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/MarsRover/src/Rover.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/MarsRover/test/mars_rover_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/MarsRover/test/mars_rover_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

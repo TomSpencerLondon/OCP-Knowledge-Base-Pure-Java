@@ -1,7 +1,6 @@
 import unittest
 
 from parameterized import parameterized
-
 from src.Grid import Grid
 from src.Rover import Rover
 
@@ -36,6 +35,14 @@ class MarsRoverTest(unittest.TestCase):
     def test_turn_left(self, input, direction):
         result = self.rover.execute(input)
         self.assertEqual(f"0:0:{direction}", result)
+
+    @parameterized.expand([
+        ('M', 0, 1),
+        ('MMMM', 0, 4),
+    ])
+    def test_move(self, input, x, y):
+        result = self.rover.execute(input)
+        self.assertEqual(f"{x}:{y}:N", result)
 
 if __name__ == '__main__':
     unittest.main()

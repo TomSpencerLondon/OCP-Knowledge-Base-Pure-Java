@@ -1,9 +1,12 @@
 from src.Direction import Direction
 from src.Grid import Grid
+from src.Position import Position
+
 
 class Rover:
     def __init__(self, grid):
-        self.grid = grid
+        self.grid: Grid = grid
+        self.position: Position = Position(0, 0)
 
     def execute(self, input):
         direction: Direction = Direction.NORTH
@@ -14,9 +17,11 @@ class Rover:
                 direction = self.turnRight(direction)
             elif(c == 'L'):
                 direction = self.turnLeft(direction)
+            elif(c == 'M'):
+                self.position = self.grid.move(direction, self.position)
 
 
-        return f"0:0:{direction.value}"
+        return f"{self.position.x}:{self.position.y}:{direction.value}"
 
     def turnRight(self, direction):
         switcher = {
