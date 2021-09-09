@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codurance.Problem10Should" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-09T06:00:46" hostname="Toms-MacBook-Pro-2.local" time="0.433">
+  <properties/>
+  <testcase name="checkForPrimeFor5()" classname="com.codurance.Problem10Should" time="0.153"/>
+  <testcase name="sumOfPrimesBelow10()" classname="com.codurance.Problem10Should" time="0.277"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

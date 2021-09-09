@@ -8,6 +8,8 @@ package com.codurance;
 //    There exists exactly one Pythagorean triplet
 //    for which a + b + c = 1000.
 //    Find the product abc.
+// 1. Pythagorean triplet = 3^2 + 4^2 = 5^2 or
+// Pythagorean triplet = 200^2 + 375^2 = 425^2
 
 import org.junit.jupiter.api.Test;
 
