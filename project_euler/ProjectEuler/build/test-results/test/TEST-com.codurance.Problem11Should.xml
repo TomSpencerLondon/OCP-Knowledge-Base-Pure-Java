@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.codurance.Problem11Should" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-09-09T20:11:36" hostname="Toms-MacBook-Pro-2.local" time="0.056">
+<testsuite name="com.codurance.Problem11Should" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-09T22:01:25" hostname="Toms-MacBook-Pro-2.local" time="0.051">
   <properties/>
-  <testcase name="getRightDown()" classname="com.codurance.Problem11Should" time="0.052"/>
-  <testcase name="getLeftDown()" classname="com.codurance.Problem11Should" time="0.001"/>
-  <testcase name="getDown()" classname="com.codurance.Problem11Should" time="0.001"/>
+  <testcase name="largestProduct()" classname="com.codurance.Problem11Should" time="0.051"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

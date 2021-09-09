@@ -38,7 +38,6 @@ package com.codurance;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -68,26 +67,10 @@ public class Problem11Should {
   );
 
   @Test
-  void getRightDown() {
+  void largestProduct() {
     final Problem11 problem11 = new Problem11(numbers);
-    final Integer rightDown = problem11.getRightDownProduct(new Position(0, 0));
+    final Long product = problem11.largestProduct();
 
-    assertThat(rightDown).isEqualTo(279_496);
-  }
-
-  @Test
-  void getLeftDown() {
-    final Problem11 problem11 = new Problem11(numbers);
-    final Integer rightDown = problem11.getLeftDownProduct(new Position(3, 0));
-
-    assertThat(rightDown).isEqualTo(24_468_444);
-  }
-
-  @Test
-  void getDown() {
-    final Problem11 problem11 = new Problem11(numbers);
-    final Integer rightDown = problem11.getDown(new Position(0, 0));
-
-    assertThat(rightDown).isEqualTo(1_651_104);
+    assertThat(product).isEqualTo(70_600_674L);
   }
 }

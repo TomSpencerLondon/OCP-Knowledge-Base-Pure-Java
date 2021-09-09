@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/main/java/com/codurance/Problem11.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
@@ -38,11 +37,12 @@
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/classes/com.codurance.Problem10Should.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/classes/com.codurance.Problem11Should.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/classes/com.codurance.Problem11Should.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/packages/com.codurance.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/reports/tests/test/packages/com.codurance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/TEST-com.codurance.Problem10Should.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/TEST-com.codurance.Problem11Should.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/TEST-com.codurance.Problem11Should.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/src/main/java/com/codurance/Problem11.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/main/java/com/codurance/Problem11.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_euler/ProjectEuler/src/test/java/com/codurance/Problem11Should.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_euler/ProjectEuler/src/test/java/com/codurance/Problem11Should.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

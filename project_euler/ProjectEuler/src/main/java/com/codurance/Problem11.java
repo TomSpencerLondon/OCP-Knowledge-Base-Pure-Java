@@ -1,66 +1,58 @@
 package com.codurance;
 
-import java.util.ArrayList;
 import java.util.List;
-
-class Position {
-  final int x;
-  final int y;
-
-  public Position(int x, int y) {
-    this.x = x;
-    this.y = y;
-  }
-}
 
 public class Problem11 {
   private final List<List<Integer>> numbers;
-  private Position position = new Position(0, 0);
+  private int productCount = 4;
 
   public Problem11(List<List<Integer>> numbers) {
     this.numbers = numbers;
   }
 
+  public Long largestProduct() {
+    long product = 0L;
 
-  public Integer getRightDownProduct(Position position) {
-    if (position.x > 16 || position.y > 16) {
-      return 0;
+    for (int col = 0; col < this.numbers.size(); col++){
+      for (int row = 0; row < this.numbers.get(0).size(); row++){
+        long tempProduct;
+
+        if (row < numbers.size() - productCount){
+          tempProduct = numbers.get(col).get(row);
+          for (int v = 1; v < productCount; v++){
+            tempProduct *= this.numbers.get(col).get(row + v);
+          }
+          product = Math.max(product, tempProduct);
+        }
+
+        if (col < numbers.size() - productCount){
+          tempProduct = numbers.get(col).get(row);
+
+          for (int h = 1; h < productCount; h++){
+            tempProduct *= this.numbers.get(col + h).get(row);
+          }
+          product = Math.max(product, tempProduct);
+        }
+
+        if (col < numbers.size() - productCount && row >= productCount){
+          tempProduct = numbers.get(col).get(row);
+
+          for (int dfu = 1; dfu < productCount; dfu++){
+            tempProduct *= this.numbers.get(col + dfu).get(row - dfu);
+          }
+          product = Math.max(product, tempProduct);
+        }
+
+        if (row < numbers.size() - productCount && col < numbers.get(0).size() - productCount){
+          tempProduct = numbers.get(col).get(row);
+
+          for (int dfd = 1; dfd < productCount; dfd++){
+            tempProduct *= this.numbers.get(col + dfd).get(row + dfd);
+          }
+          product = Math.max(product, tempProduct);
+        }
+      }
     }
-
-    List<Integer> list = new ArrayList<Integer>();
-    list.add(numbers.get(position.y).get(position.x));
-    list.add(numbers.get(position.y + 1).get(position.x + 1));
-    list.add(numbers.get(position.y + 2).get(position.x + 2));
-    list.add(numbers.get(position.y + 3).get(position.x + 3));
-
-    return list.stream().reduce(1, (a, b) -> a * b);
-  }
-
-  public Integer getLeftDownProduct(Position position) {
-    if (position.x < 3 || position.x > 19 || position.y > 16) {
-      return 0;
-    }
-
-    List<Integer> list = new ArrayList<>();
-    list.add(numbers.get(position.y).get(position.x));
-    list.add(numbers.get(position.y + 1).get(position.x - 1));
-    list.add(numbers.get(position.y + 2).get(position.x - 2));
-    list.add(numbers.get(position.y + 3).get(position.x - 3));
-
-    return list.stream().reduce(1, (a, b) -> a * b);
-  }
-
-  public Integer getDown(Position position) {
-    if (position.x > 19 || position.y > 16) {
-      return 0;
-    }
-
-    List<Integer> list = new ArrayList<>();
-    list.add(numbers.get(position.y).get(position.x));
-    list.add(numbers.get(position.y + 1).get(position.x));
-    list.add(numbers.get(position.y + 2).get(position.x));
-    list.add(numbers.get(position.y + 3).get(position.x));
-
-    return list.stream().reduce(1, (a, b) -> a * b);
+    return product;
   }
 }
