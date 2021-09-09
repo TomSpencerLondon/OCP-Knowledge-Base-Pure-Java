@@ -37,12 +37,16 @@ class MarsRoverTest(unittest.TestCase):
         self.assertEqual(f"0:0:{direction}", result)
 
     @parameterized.expand([
-        ('M', 0, 1),
-        ('MMMM', 0, 4),
+        ('M', 0, 1, 'N'),
+        ('MMMM', 0, 4, 'N'),
+        ('MMMMMMMMMM', 0, 0, 'N'),
+        ('RMM', 2, 0, 'E'),
+        ('RMMMMMMMMM', 9, 0, 'E'),
+        ('RMMMMMMMMMM', 0, 0, 'E')
     ])
-    def test_move(self, input, x, y):
+    def test_move(self, input, x, y, direction):
         result = self.rover.execute(input)
-        self.assertEqual(f"{x}:{y}:N", result)
+        self.assertEqual(f"{x}:{y}:{direction}", result)
 
 if __name__ == '__main__':
     unittest.main()

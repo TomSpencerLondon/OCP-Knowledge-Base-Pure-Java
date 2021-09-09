@@ -9,9 +9,9 @@ class Grid:
     def move(self, direction, position):
         switcher = {
             Direction.NORTH: Position(position.x, position.y + 1),
-            Direction.EAST: Position(position.x - 1, position.y),
+            Direction.EAST: Position(position.x + 1, position.y),
             Direction.SOUTH: Position(position.x, position.y - 1),
-            Direction.WEST: Position(position.x + 1, position.y - 1)
+            Direction.WEST: Position(position.x - 1, position.y)
         }
 
         return switcher.get(direction, position)

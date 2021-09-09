@@ -20,7 +20,6 @@ class Rover:
             elif(c == 'M'):
                 self.position = self.grid.move(direction, self.position)
 
-
         return f"{self.position.x}:{self.position.y}:{direction.value}"
 
     def turnRight(self, direction):
