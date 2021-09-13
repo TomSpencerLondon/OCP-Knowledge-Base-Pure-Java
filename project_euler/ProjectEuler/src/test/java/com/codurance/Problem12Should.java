@@ -61,6 +61,14 @@ public class Problem12Should {
   }
 
   @Test
+  void find_first_triangle_number_with_over_500_divisors() {
+    final Problem12 problem12 = new Problem12();
+    Integer triangleNumber = problem12.triangleNumberWithDivisorsMoreThan(500);
+
+    assertThat(triangleNumber).isEqualTo(76_576_500);
+  }
+
+  @Test
   void factorsForSix() {
     final Problem12 problem12 = new Problem12();
     int triangleNumber = problem12.factorsFor(6);

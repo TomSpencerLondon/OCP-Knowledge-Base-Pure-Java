@@ -1,12 +1,11 @@
 package com.codurance;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class Problem12 {
   public List<Integer> triangleNumbersForFirst(int number) {
-    List<Integer> numbers = new ArrayList<Integer>();
+    List<Integer> numbers = new ArrayList<>();
     numbers.add(1);
     for (int i = 2; i <= number; i++){
       numbers.add(numbers.get(i - 2) + i);
@@ -35,12 +34,17 @@ public class Problem12 {
   }
 
   public int factorsFor(int triangleNumber) {
-    int count = 2;
+    int count = 0;
 
-    for (int i = 1; i < triangleNumber / 2; i++){
+    int end = (int) Math.sqrt(triangleNumber);
+    for (int i = 1; i <= end; i++){
       if (triangleNumber % i == 0){
-        count++;
+        count += 2;
       }
+    }
+
+    if (end * end == triangleNumber){
+      count++;
     }
 
     return count;
