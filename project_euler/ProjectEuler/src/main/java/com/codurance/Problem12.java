@@ -23,7 +23,7 @@ public class Problem12 {
     while(notFound){
       int triangleNumber = (n * (n + 1)) / 2;
 
-      if (factorsFor(triangleNumber) > number){
+      if (factorsForAnyNumber(triangleNumber) > number){
         return triangleNumber;
       }
 
@@ -44,6 +44,24 @@ public class Problem12 {
     }
 
     if (end * end == triangleNumber){
+      count++;
+    }
+
+    return count;
+  }
+
+
+  public int factorsForAnyNumber(int anyNumber){
+    int count = 0;
+    int end = (int) Math.sqrt(anyNumber);
+
+    for (int i = 1; i < end; i++){
+      if (anyNumber % i == 0) {
+        count += 2;
+      }
+    }
+
+    if (end * end == anyNumber){
       count++;
     }
 

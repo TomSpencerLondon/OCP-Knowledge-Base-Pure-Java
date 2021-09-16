@@ -83,4 +83,28 @@ public class Problem12Should {
 
     assertThat(triangleNumber).isEqualTo(2);
   }
+
+  @Test
+  void factorsForAnyNumber() {
+    final Problem12 problem12 = new Problem12();
+    int triangleNumber = problem12.factorsForAnyNumber(9);
+
+    assertThat(triangleNumber).isEqualTo(3);
+  }
+
+  @Test
+  void factorsForLargeRandomNumber() {
+    final Problem12 problem12 = new Problem12();
+    int anyNumber = problem12.factorsForAnyNumber(100);
+
+    assertThat(anyNumber).isEqualTo(9);
+  }
+
+  @Test
+  void factorsForLargeRandom10() {
+    final Problem12 problem12 = new Problem12();
+    int anyNumber = problem12.factorsForAnyNumber(10);
+
+    assertThat(anyNumber).isEqualTo(4);
+  }
 }

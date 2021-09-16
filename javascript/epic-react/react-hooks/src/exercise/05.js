@@ -24,6 +24,7 @@ function Tilt({children}) {
 
   return (
     <div className="tilt-root" ref={tiltRef}>
+      <div>temperature: {temperature}</div>
       <div className="tilt-child">{children}</div>
     </div>
   )
