@@ -9,30 +9,30 @@ mod position;
 pub struct Rover {
     grid: Grid,
     position: Position,
+    direction: Direction
 }
 
 impl Rover {
     pub fn new() -> Rover {
-        Rover { grid: Grid {}, position: Position::new(0, 0) }
+        Rover { grid: Grid {}, position: Position::new(0, 0), direction: Direction::N }
     }
 
     pub fn execute(&mut self, input: &str) -> String {
         let commands = input.split("");
-        let mut direction: Direction = Direction::N;
         for c in commands {
             if c == "R" {
-                direction = self.turn_right(direction);
+                self.direction = self.turn_right();
             } else if c == "L" {
-                direction = self.turn_left(direction);
+                self.direction = self.turn_left();
             } else if c == "M" {
-                self.position = self.grid.move_forward(Position::new(self.position.x, self.position.y), &direction);
+                self.position = self.grid.move_forward(Position::new(self.position.x, self.position.y), &self.direction);
             }
         }
-        String::from(format!("{:?}:{:?}:{:?}", self.position.x, self.position.y, direction))
+        String::from(format!("{:?}:{:?}:{:?}", self.position.x, self.position.y, self.direction))
     }
 
-    fn turn_left(&mut self, direction: Direction) -> Direction {
-        match direction {
+    fn turn_left(&mut self) -> Direction {
+        match self.direction {
             Direction::N => { Direction::W }
             Direction::E => { Direction::N }
             Direction::S => { Direction::E }
@@ -40,8 +40,8 @@ impl Rover {
         }
     }
 
-    fn turn_right(&mut self, direction: Direction) -> Direction {
-        match direction {
+    fn turn_right(&mut self) -> Direction {
+        match self.direction {
             Direction::N => { Direction::E }
             Direction::E => { Direction::S }
             Direction::S => { Direction::W }
