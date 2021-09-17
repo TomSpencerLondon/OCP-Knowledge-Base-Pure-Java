@@ -13,22 +13,34 @@ pub struct Rover {
 }
 
 impl Rover {
-    pub fn new() -> Rover {
-        Rover { grid: Grid {}, position: Position::new(0, 0), direction: Direction::N }
+    pub fn new(grid: Grid) -> Rover {
+        Rover { grid, position: Position::new(0, 0), direction: Direction::N }
     }
 
     pub fn execute(&mut self, input: &str) -> String {
         let commands = input.split("");
+        let mut obstacle= None;
         for c in commands {
             if c == "R" {
                 self.direction = self.turn_right();
             } else if c == "L" {
                 self.direction = self.turn_left();
             } else if c == "M" {
-                self.position = self.grid.move_forward(Position::new(self.position.x, self.position.y), &self.direction);
+                let new_position = self.grid.move_forward(Position::new(self.position.x, self.position.y), &self.direction);
+                if new_position.is_none() {
+                    obstacle = Some("O:");
+                    break;
+                }else {
+                    self.position = new_position.unwrap();
+                }
             }
         }
-        String::from(format!("{:?}:{:?}:{:?}", self.position.x, self.position.y, self.direction))
+
+        if (obstacle.is_none()) {
+            return String::from(format!("{:?}:{:?}:{:?}", self.position.x, self.position.y, self.direction));
+        } else {
+            return obstacle.unwrap().to_string() + &String::from(format!("{:?}:{:?}:{:?}", self.position.x, self.position.y, self.direction));
+        }
     }
 
     fn turn_left(&mut self) -> Direction {
@@ -58,7 +70,8 @@ mod tests {
 
     #[test]
     fn empty_command() {
-        let mut rover: Rover = Rover::new();
+        let mut grid: Grid = Grid::new(Vec::new());
+        let mut rover: Rover = Rover::new(grid);
         assert_eq!(rover.execute(""), String::from("0:0:N"));
     }
 
@@ -68,7 +81,8 @@ mod tests {
     #[test_case("RRRR",  "0:0:N")]
     #[test_case("RRRRR",  "0:0:E")]
     fn turn_right(input: &str, position: &str) {
-        let mut rover: Rover = Rover::new();
+        let mut grid: Grid = Grid::new(Vec::new());
+        let mut rover: Rover = Rover::new(grid);
         assert_eq!(rover.execute(input), String::from(position));
     }
 
@@ -78,7 +92,8 @@ mod tests {
     #[test_case("LLLL",  "0:0:N")]
     #[test_case("LLLLL",  "0:0:W")]
     fn turn_left(input: &str, position: &str) {
-        let mut rover: Rover = Rover::new();
+        let mut grid: Grid = Grid::new(Vec::new());
+        let mut rover: Rover = Rover::new(grid);
         assert_eq!(rover.execute(input), String::from(position));
     }
 
@@ -88,7 +103,16 @@ mod tests {
     #[test_case("RMMMMM", "5:0:E")]
     #[test_case("LMMMMMM", "4:0:W")]
     fn move_forward(input: &str, position: &str) {
-        let mut rover: Rover = Rover::new();
+        let mut grid: Grid = Grid::new(Vec::new());
+        let mut rover: Rover = Rover::new(grid);
+        assert_eq!(rover.execute(input), String::from(position));
+    }
+
+    #[test_case("MMM", "O:0:2:N")]
+    fn move_with_obstacle(input: &str, position: &str) {
+        let obstacles = vec![Position::new(0, 2)];
+        let mut grid: Grid = Grid::new(obstacles);
+        let mut rover: Rover = Rover::new(grid);
         assert_eq!(rover.execute(input), String::from(position));
     }
 
