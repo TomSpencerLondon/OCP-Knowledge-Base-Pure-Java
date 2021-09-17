@@ -7,28 +7,28 @@ mod grid;
 mod position;
 
 pub struct Rover {
-    grid: Grid
+    grid: Grid,
+    position: Position,
 }
 
 impl Rover {
     pub fn new() -> Rover {
-        Rover { grid: Grid {} }
+        Rover { grid: Grid {}, position: Position::new(0, 0) }
     }
 
     pub fn execute(&mut self, input: &str) -> String {
         let commands = input.split("");
         let mut direction: Direction = Direction::N;
-        let mut position: Position = Position::new(0, 0);
         for c in commands {
             if c == "R" {
                 direction = self.turn_right(direction);
             } else if c == "L" {
                 direction = self.turn_left(direction);
             } else if c == "M" {
-                position = self.grid.move_forward(position, &direction);
+                self.position = self.grid.move_forward(Position::new(self.position.x, self.position.y), &direction);
             }
         }
-        String::from(format!("{:?}:{:?}:{:?}", position.x, position.y, direction))
+        String::from(format!("{:?}:{:?}:{:?}", self.position.x, self.position.y, direction))
     }
 
     fn turn_left(&mut self, direction: Direction) -> Direction {

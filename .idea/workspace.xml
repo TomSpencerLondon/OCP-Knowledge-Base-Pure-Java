@@ -23,13 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6facfe33-f4a1-4036-b060-a852dffee98b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/deploy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/devops/image-analyzer-lambda-layer/outputTemplate.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/javascript/examples/Bank-React/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/examples/Bank-React/.github/workflows/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust/mars-rover/src/grid.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust/mars-rover/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust/mars-rover/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rust/mars-rover/src/position.rs" beforeDir="false" afterPath="$PROJECT_DIR$/rust/mars-rover/src/position.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
