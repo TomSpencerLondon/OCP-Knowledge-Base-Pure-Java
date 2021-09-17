@@ -24,22 +24,12 @@ impl Rover {
                 direction = self.turn_right(direction);
             } else if c == "L" {
                 direction = self.turn_left(direction);
-            }else if c == "M" {
-                position = self.move_forward(position, &direction);
+            } else if c == "M" {
+                position = self.grid.move_forward(position, &direction);
             }
         }
         String::from(format!("{:?}:{:?}:{:?}", position.x, position.y, direction))
     }
-
-    pub fn move_forward(&mut self, position: Position, direction: &Direction) -> Position {
-        match direction {
-            Direction::N => { Position::new(position.x, position.y + 1) }
-            Direction::E => { Position::new(position.x + 1, position.y) }
-            Direction::S => { Position::new(position.x, position.y - 1) }
-            Direction::W => { Position::new(position.x - 1, position.y) }
-        }
-    }
-
 
     fn turn_left(&mut self, direction: Direction) -> Direction {
         match direction {
