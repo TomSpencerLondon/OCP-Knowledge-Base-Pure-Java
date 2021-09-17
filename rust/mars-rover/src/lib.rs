@@ -1,5 +1,6 @@
 use crate::direction::Direction;
 use crate::grid::{Grid};
+use crate::position::Position;
 
 mod direction;
 mod grid;
@@ -17,14 +18,26 @@ impl Rover {
     pub fn execute(&mut self, input: &str) -> String {
         let commands = input.split("");
         let mut direction: Direction = Direction::N;
+        let mut position: Position = Position::new(0, 0);
         for c in commands {
             if c == "R" {
                 direction = self.turn_right(direction);
             } else if c == "L" {
                 direction = self.turn_left(direction);
+            }else if c == "M" {
+                position = self.move_forward(position, &direction);
             }
         }
-        String::from(format!("0:0:{:?}", direction))
+        String::from(format!("{:?}:{:?}:{:?}", position.x, position.y, direction))
+    }
+
+    pub fn move_forward(&mut self, position: Position, direction: &Direction) -> Position {
+        match direction {
+            Direction::N => { Position::new(position.x, position.y + 1) }
+            Direction::E => { Position::new(position.x + 1, position.y) }
+            Direction::S => { Position::new(position.x, position.y - 1) }
+            Direction::W => { Position::new(position.x - 1, position.y) }
+        }
     }
 
 
@@ -78,4 +91,15 @@ mod tests {
         let mut rover: Rover = Rover::new();
         assert_eq!(rover.execute(input), String::from(position));
     }
+
+    #[test_case("M", "0:1:N")]
+    #[test_case("MMMMM", "0:5:N")]
+    #[test_case("MMMMMMMMMMM", "0:1:N")]
+    #[test_case("RMMMMM", "5:0:E")]
+    #[test_case("LMMMMMM", "4:0:W")]
+    fn move_forward(input: &str, position: &str) {
+        let mut rover: Rover = Rover::new();
+        assert_eq!(rover.execute(input), String::from(position));
+    }
+
 }
