@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.codurance.primeFactors.PrimeFactorsTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-09-14T19:58:48" hostname="Toms-MBP-2" time="0.031">
+  <properties/>
+  <testcase name="of_acceptanceTest()" classname="com.codurance.primeFactors.PrimeFactorsTest" time="0.024"/>
+  <testcase name="of_2Is2()" classname="com.codurance.primeFactors.PrimeFactorsTest" time="0.001"/>
+  <testcase name="of_3Is3()" classname="com.codurance.primeFactors.PrimeFactorsTest" time="0.0"/>
+  <testcase name="of_4Is2_2()" classname="com.codurance.primeFactors.PrimeFactorsTest" time="0.001"/>
+  <testcase name="of_6Is2_3()" classname="com.codurance.primeFactors.PrimeFactorsTest" time="0.001"/>
+  <testcase name="of_8Is_2_2_2()" classname="com.codurance.primeFactors.PrimeFactorsTest" time="0.001"/>
+  <testcase name="of_20Is_2_2_5()" classname="com.codurance.primeFactors.PrimeFactorsTest" time="0.001"/>
+  <testcase name="of_9Is_3_3_3()" classname="com.codurance.primeFactors.PrimeFactorsTest" time="0.0"/>
+  <testcase name="of_1isNone()" classname="com.codurance.primeFactors.PrimeFactorsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
